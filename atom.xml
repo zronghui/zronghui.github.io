@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://removeif.github.io/"/>
-  <updated>2020-02-28T16:20:58.000Z</updated>
+  <updated>2020-03-01T04:04:02.000Z</updated>
   <id>https://removeif.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>烦人的网页编码问题</title>
+    <link href="https://removeif.github.io/python/01-%E7%83%A6%E4%BA%BA%E7%9A%84%E7%BD%91%E9%A1%B5%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98.html"/>
+    <id>https://removeif.github.io/python/01-%E7%83%A6%E4%BA%BA%E7%9A%84%E7%BD%91%E9%A1%B5%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98.html</id>
+    <published>2020-03-01T02:31:44.000Z</published>
+    <updated>2020-03-01T04:04:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><p>请求网址乱码：</p><p>一开始以为是压缩问题：</p><h2 id="content-encoding-和-accept-encoding"><a href="#content-encoding-和-accept-encoding" class="headerlink" title="content-encoding 和 accept-encoding"></a>content-encoding 和 accept-encoding</h2><ul><li>response headers中的content-encoding</li><li>request headers 中的accept-encoding</li></ul><p>content-encoding是指网页使用了哪种压缩方式传输数据给你，accept-encoding表示你发送请求时告诉服务器，我可以解压这些格式的数据。</p><p>二者的关系是，对方网页会根据你发送的accept-encoding来决定用什么格式(content-encoding)传给你。</p><p>Python 中，若不添加 accept-encoding, requests 默认添加 r.request.headers[‘Accept-Encoding’] 为 ‘gzip, deflate’</p><p>若 ‘Accept-Encoding’: ‘’，则 response 应该没有压缩</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'Accept-Encoding'</span>: <span class="string">''</span>,</span><br><span class="line">    <span class="string">'user-agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'</span></span><br><span class="line">&#125;</span><br><span class="line">r = requests.get(<span class="string">'https://zhuanlan.zhihu.com/python-programming'</span>, headers = headers)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>r.headers[<span class="string">'Content-Encoding'</span>]</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">"C:\Program Files\Anaconda3\lib\site-packages\requests\structures.py"</span>, line <span class="number">54</span>, <span class="keyword">in</span> __getitem__</span><br><span class="line">    <span class="keyword">return</span> self._store[key.lower()][<span class="number">1</span>]</span><br><span class="line">KeyError: <span class="string">'content-encoding'</span></span><br></pre></td></tr></table></figure><h2 id="获取网页正确编码"><a href="#获取网页正确编码" class="headerlink" title="获取网页正确编码"></a>获取网页正确编码</h2><p>requests会从服务器返回的响应头的 Content-Type 去获取字符集编码，如果content-type有charset字段那么requests才能正确识别编码，否则就使用默认的 ISO-8859-1</p><p>所以 requests 的 response.text 有可能是乱码的</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ic(doc.headers, chardet.detect(doc.content), doc.apparent_encoding, doc.encoding)</span><br><span class="line"><span class="comment"># ic| doc.headers: &#123;'Content-Type': 'text/html', 'Last-Modified': 'Sun, 01 Mar 2020 00:49:50 GMT', 'Vary': 'Accept-Encoding', 'ETag': 'W/"5e5b06ae-1da6a"', 'Expires': 'Sun, 01 Mar 2020 02:44:33 GMT', 'Cache-Control': 'max-age=300', 'P3P': 'CP=CAO PSA OUR', 'Content-Encoding': 'gzip', 'Content-Length': '25940', 'Accept-Ranges': 'bytes', 'Date': 'Sun, 01 Mar 2020 02:44:01 GMT', 'Age': '267', 'Connection': 'keep-alive', 'X-Hits': '4'&#125;</span></span><br><span class="line"><span class="comment">#     chardet.detect(doc.content): &#123;'confidence': 0.99, 'encoding': 'GB2312', 'language': 'Chinese'&#125;</span></span><br><span class="line"><span class="comment">#     doc.apparent_encoding: 'GB2312'</span></span><br><span class="line"><span class="comment">#     doc.encoding: 'ISO-8859-1'</span></span><br></pre></td></tr></table></figure><h2 id="查看网页正确编码的方法"><a href="#查看网页正确编码的方法" class="headerlink" title="查看网页正确编码的方法"></a>查看网页正确编码的方法</h2><p>response.apparent_encoding 或者 chardet.detect(response.content)</p><p>requests的返回结果对象里有个apparent_encoding函数, apparent_encoding通过调用chardet.detect()来识别文本编码. 但是需要注意的是，这有些消耗计算资源.</p><p>正确的编码还可能存在于 meta 中</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=gbk"</span> /&gt;</span></span><br></pre></td></tr></table></figure><p>python requests的utils.py里已经有个完善的从html中获取meta charset的函数. 说白了还是一对的正则表达式.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">32</span>]: requests.utils.get_encodings_from_content(r.content)</span><br><span class="line">Out[<span class="number">32</span>]: [<span class="string">'gbk'</span>]</span><br></pre></td></tr></table></figure><p>总之，网页乱码的情况下，可以用 response.apparent_encoding 获取正确编码xx，再用 response.encoding = ‘xx’ , 然后就能调用 response.text</p><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://zhuanlan.zhihu.com/p/35643926">Headers设置之Accept-Encoding - 知乎</a><br><a href="http://xiaorui.cc/archives/2786">代码分析Python requests库中文编码问题 – 峰云就她了</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://removeif.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mac 屏保</title>
+    <link href="https://removeif.github.io/Mac/mac-%E5%B1%8F%E4%BF%9D.html"/>
+    <id>https://removeif.github.io/Mac/mac-%E5%B1%8F%E4%BF%9D.html</id>
+    <published>2020-02-29T04:45:00.000Z</published>
+    <updated>2020-03-01T04:04:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p>好多屏保不支持 10.14+</p><h2 id="Fractal-Clock-Screen-Saver"><a href="#Fractal-Clock-Screen-Saver" class="headerlink" title="*Fractal Clock Screen Saver"></a>*Fractal Clock Screen Saver</h2><p><img src="http://www.dqd.com/~mayoff/programs/FractalClock/shot-1.png" alt="这些年我在 Mac 上用过的 39 款精品屏保程序插图(27)"></p><p><a href="http://www.dqd.com/~mayoff/programs/FractalClock/">官网</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;好多屏保不支持 10.14+&lt;/p&gt;
+&lt;h2 id=&quot;Fractal-Clock-Screen-Saver&quot;&gt;&lt;a href=&quot;#Fractal-Clock-Screen-Saver&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="https://removeif.github.io/categories/Mac/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>chrome 插件</title>
@@ -417,52 +465,6 @@
     <summary type="html">
     
       Convert Collections
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://removeif.github.io/categories/java/"/>
-    
-      <category term="Collections" scheme="https://removeif.github.io/categories/java/Collections/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Queues</title>
-    <link href="https://removeif.github.io/java/Collections/Queues.html"/>
-    <id>https://removeif.github.io/java/Collections/Queues.html</id>
-    <published>2020-02-16T08:48:14.000Z</published>
-    <updated>2020-02-26T13:15:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[toc]</p>]]></content>
-    
-    <summary type="html">
-    
-      Queues
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://removeif.github.io/categories/java/"/>
-    
-      <category term="Collections" scheme="https://removeif.github.io/categories/java/Collections/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Map Operations</title>
-    <link href="https://removeif.github.io/java/Collections/05-Map-Operations.html"/>
-    <id>https://removeif.github.io/java/Collections/05-Map-Operations.html</id>
-    <published>2020-02-16T08:48:04.000Z</published>
-    <updated>2020-02-26T13:15:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[toc]</p>]]></content>
-    
-    <summary type="html">
-    
-      Map Operations
     
     </summary>
     
