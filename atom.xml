@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-03-29T14:46:04.000Z</updated>
+  <updated>2020-04-01T06:55:10.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息系统实训-第3次作业</title>
+    <link href="https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD-%E7%AC%AC3%E6%AC%A1%E4%BD%9C%E4%B8%9A.html"/>
+    <id>https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD-%E7%AC%AC3%E6%AC%A1%E4%BD%9C%E4%B8%9A.html</id>
+    <published>2020-04-01T06:48:29.000Z</published>
+    <updated>2020-04-01T06:55:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="建立index，插入数据"><a href="#建立index，插入数据" class="headerlink" title="建立index，插入数据"></a>建立index，插入数据</h2><h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> chain</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pretty_errors</span><br><span class="line"><span class="keyword">from</span> elasticsearch <span class="keyword">import</span> Elasticsearch, helpers</span><br><span class="line"></span><br><span class="line">pretty_errors.activate()</span><br><span class="line"></span><br><span class="line">es = Elasticsearch()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建立index</span></span><br><span class="line">mapping = &#123;</span><br><span class="line">    <span class="string">'properties'</span>: &#123;</span><br><span class="line">        <span class="string">'book_name'</span>: &#123;</span><br><span class="line">            <span class="string">'type'</span>: <span class="string">'text'</span>,</span><br><span class="line">            <span class="string">'analyzer'</span>: <span class="string">'ik_max_word'</span>,</span><br><span class="line">            <span class="string">'search_analyzer'</span>: <span class="string">'ik_max_word'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">es.indices.delete(index=<span class="string">'books'</span>, ignore=[<span class="number">400</span>, <span class="number">404</span>])</span><br><span class="line">es.indices.create(index=<span class="string">'books'</span>, ignore=<span class="number">400</span>)</span><br><span class="line">result = es.indices.put_mapping(index=<span class="string">'books'</span>, doc_type=<span class="string">'books'</span>, body=mapping)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 批量插入数据</span></span><br><span class="line">print(<span class="string">"============== index ================"</span>)</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line">j = <span class="number">0</span></span><br><span class="line">num = <span class="number">0</span></span><br><span class="line">actions = []</span><br><span class="line">max_count = <span class="number">2000</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'shudan1.json'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f1, open(<span class="string">'volmoe1.json'</span>, <span class="string">'r'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f2:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> chain(f1, f2):</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            triple_dict = json.loads(line)</span><br><span class="line">            action = &#123;</span><br><span class="line">                <span class="string">"_index"</span>: <span class="string">"books"</span>,</span><br><span class="line">                <span class="string">"_type"</span>: <span class="string">"books"</span>,</span><br><span class="line">                <span class="comment"># "_id": i,</span></span><br><span class="line">                <span class="string">"_source"</span>: triple_dict</span><br><span class="line">            &#125;</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            actions.append(action)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            print(<span class="string">f"!!! <span class="subst">&#123;j&#125;</span> th row insert faied: <span class="subst">&#123;line&#125;</span>"</span>)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">if</span> count &gt;= max_count:</span><br><span class="line">            helpers.bulk(es, actions)</span><br><span class="line">            actions = []</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            num += <span class="number">1</span></span><br><span class="line">            print(<span class="string">"Insert "</span> + str(num * max_count) + <span class="string">" records."</span>)</span><br><span class="line">helpers.bulk(es, actions)</span><br><span class="line">print(<span class="string">'finish~~~'</span>)</span><br></pre></td></tr></table></figure><h3 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h3><img src="/Users/zhangronghui/Library/Application Support/typora-user-images/image-20200401145109065.png" alt="image-20200401145109065" style="zoom:50%;" /><img src="https://i.loli.net/2020/04/01/PSpLFleX5hnNTdW.png" alt="PSpLFleX5hnNTdW" style="zoom: 50%;" /><img src="https://i.loli.net/2020/04/01/vGTe3juAI6baCft.png" alt="vGTe3juAI6baCft" style="zoom:50%;" />]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="研究生课程" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/"/>
+    
+      <category term="信息系统实训" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/"/>
+    
+      <category term="提交作业" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>tricks-2020-04</title>
+    <link href="https://zronghui.github.io/tricks/tricks-2020-04.html"/>
+    <id>https://zronghui.github.io/tricks/tricks-2020-04.html</id>
+    <published>2020-04-01T03:52:38.000Z</published>
+    <updated>2020-04-01T06:55:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h1 id="04-01"><a href="#04-01" class="headerlink" title="04-01"></a>04-01</h1><h2 id="快速抠图"><a href="#快速抠图" class="headerlink" title="快速抠图"></a>快速抠图</h2><p><a href="https://bgeraser.com/index.html">Remove Background from Images - Background Eraser</a></p><h2 id="Screen-最简单的屏幕共享"><a href="#Screen-最简单的屏幕共享" class="headerlink" title="Screen - 最简单的屏幕共享"></a>Screen - 最简单的屏幕共享</h2><p><a href="https://www.appinn.com/screen-online/">Screen - 最简单的屏幕共享方式，可视频、语音、屏幕标注，就像在一间办公室一样 - 小众软件</a></p><p><a href="https://www.ghpym.com/andpandownload.html">Android PanDownload v1.2.9 - 果核剥壳</a></p><h2 id="bilibili-ASS-弹幕在线转换"><a href="#bilibili-ASS-弹幕在线转换" class="headerlink" title="bilibili ASS 弹幕在线转换"></a>bilibili ASS 弹幕在线转换</h2><p>默认只能一个一个文件转换，经过修改后可多选</p><p><a href="https://tiansh.github.io/us-danmaku/bilibili/">bilibili ASS 弹幕在线转换</a></p><p><a href="file:///Volumes/Data/PycharmProjects/private/24%20bilibili%20ASS%20%E5%BC%B9%E5%B9%95%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2/bilibili%20ASS%20%E5%BC%B9%E5%B9%95%E5%9C%A8%E7%BA%BF%E8%BD%AC%E6%8D%A2.htm">bilibili ASS 弹幕在线转换-本地版</a></p><h2 id="健身小程序：4分钟-Tabata-健身"><a href="#健身小程序：4分钟-Tabata-健身" class="headerlink" title="健身小程序：4分钟 Tabata 健身"></a>健身小程序：4分钟 Tabata 健身</h2><p><a href="https://www.appinn.com/jianshen-wechat-miniapp/">健身小程序：4分钟 Tabata 健身 - 小众软件</a></p><h2 id="QtScrcpy-Android实时投屏软件"><a href="#QtScrcpy-Android实时投屏软件" class="headerlink" title="QtScrcpy: Android实时投屏软件"></a>QtScrcpy: Android实时投屏软件</h2><p><a href="https://gitee.com/Barryda/QtScrcpy">QtScrcpy: Android实时投屏软件，此应用程序提供USB(或通过TCP/IP)连接的Android设备的显示和控制。它不需要任何root访问权限</a></p><h2 id="幕享投屏"><a href="#幕享投屏" class="headerlink" title="幕享投屏"></a>幕享投屏</h2><p><a href="https://www.iplaysoft.com/p/mu-xiang">幕享投屏 - 快上车！超好用的免费无线投屏软件神器！ - 异次元软件下载</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="tricks" scheme="https://zronghui.github.io/categories/tricks/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>weekly-contest-182</title>
@@ -237,9 +283,9 @@
     <link href="https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/TODO.html"/>
     <id>https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/TODO.html</id>
     <published>2020-03-11T08:15:47.000Z</published>
-    <updated>2020-03-29T14:37:31.000Z</updated>
+    <updated>2020-04-01T06:55:04.000Z</updated>
     
-    <content type="html"><![CDATA[<p>[toc]</p><a id="more"></a><p><a href="https://github.com/superRaytin/paginationjs">superRaytin/paginationjs: A jQuery plugin to provide simple yet fully customisable pagination.</a></p><p><a href="https://lookao.com/">Lookao</a></p>]]></content>
+    <content type="html"><![CDATA[<p>[toc]</p><a id="more"></a><p><a href="https://github.com/superRaytin/paginationjs">superRaytin/paginationjs: A jQuery plugin to provide simple yet fully customisable pagination.</a></p><p><a href="https://lookao.com/">Lookao</a></p><p><a href="https://mengso.com/">萌搜 为小众而搜</a></p><ul><li><input disabled="" type="checkbox"> 用用户搜索的关键词去豆瓣搜索，再解析回来</li></ul>]]></content>
     
     <summary type="html">
     
@@ -385,48 +431,6 @@
     <updated>2020-03-11T07:18:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><p><img src="https://i.loli.net/2020/03/11/95I1GVNYheHrXz8.png" alt="95I1GVNYheHrXz8"></p><p><img src="https://i.loli.net/2020/03/11/fvLJAOayUSnw5CM.png" alt="fvLJAOayUSnw5CM"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="jiao" scheme="https://zronghui.github.io/categories/jiao/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>大自然的语言</title>
-    <link href="https://zronghui.github.io/jiao/%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E8%AF%AD%E8%A8%80.html"/>
-    <id>https://zronghui.github.io/jiao/%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E8%AF%AD%E8%A8%80.html</id>
-    <published>2020-03-11T07:10:51.000Z</published>
-    <updated>2020-03-11T07:18:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="jiao" scheme="https://zronghui.github.io/categories/jiao/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>安塞腰鼓</title>
-    <link href="https://zronghui.github.io/jiao/%E5%AE%89%E5%A1%9E%E8%85%B0%E9%BC%93.html"/>
-    <id>https://zronghui.github.io/jiao/%E5%AE%89%E5%A1%9E%E8%85%B0%E9%BC%93.html</id>
-    <published>2020-03-11T07:10:32.000Z</published>
-    <updated>2020-03-11T07:18:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
     
     <summary type="html">
     
