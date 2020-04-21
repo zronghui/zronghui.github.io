@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-04-20T02:25:56.000Z</updated>
+  <updated>2020-04-21T16:51:53.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>斐讯K2路由刷机</title>
-    <link href="https://zronghui.github.io/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html"/>
-    <id>https://zronghui.github.io/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html</id>
-    <published>2020-04-20T00:03:32.000Z</published>
-    <updated>2020-04-20T02:25:56.000Z</updated>
+    <title>信息系统实训-中期PPT</title>
+    <link href="https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD-%E4%B8%AD%E6%9C%9FPPT.html"/>
+    <id>https://zronghui.github.io/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD-%E4%B8%AD%E6%9C%9FPPT.html</id>
+    <published>2020-04-20T04:40:09.000Z</published>
+    <updated>2020-04-21T16:51:53.000Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><ol><li>手机上连接无线网，查看无线网详情，可以看到路由器配置地址</li><li>手动更新 刷V22.6.526.199官方固件</li><li>刷入Breed</li><li>刷入第三方固件 </li></ol><p><a href="http://www.upantool.com/gujian/phicomm/14035.html">斐讯K2 V22.6.526.199官方固件-刷机备用下载-斐讯固件-U盘量产网</a></p><p><a href="https://tbvv.net/posts/0101-breed.html">斐讯K1、K2、K2P 刷机、刷入Breed 辅助工具 | tb</a></p><p><a href="https://github.com/moonjoin/k2-firmware">moonjoin/k2-firmware: 斐讯K2刷机，固件，breed</a></p><img src="https://i.loli.net/2020/04/20/bTgrHKL3CG8sZjy.png" alt="bTgrHKL3CG8sZjy" style="zoom:50%;" />]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><hr><p>theme: gaia<br>_class: lead<br>paginate: true<br>backgroundColor: #fff<br>backgroundImage: url(‘<a href="https://marp.app/assets/hero-background.jpg&#39;">https://marp.app/assets/hero-background.jpg&#39;</a>)<br>marp: true</p><hr><h1 id="书籍搜索引擎"><a href="#书籍搜索引擎" class="headerlink" title="书籍搜索引擎"></a>书籍搜索引擎</h1><p>by 张荣辉-2019140740</p><hr><h1 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h1><table><thead><tr><th>网站</th><th>类型</th><th>爬取条数（共 18w 条）</th></tr></thead><tbody><tr><td><a href="http://www.zxcs.me/">知轩藏书</a></td><td>网络小说</td><td>9976</td></tr><tr><td><a href="http://www.java1234.com/">Java知识分享网</a></td><td>计算机书籍</td><td>9441</td></tr><tr><td><a href="https://www.shudan.vip/">书单网</a></td><td>各种书籍</td><td>159335</td></tr><tr><td><a href="http://slfswh.xiangzhan.com/">读书皮</a></td><td>畅销流行书籍</td><td>899</td></tr><tr><td><a href="https://volmoe.com/">Vol.moe</a></td><td>漫画</td><td>8482</td></tr></tbody></table><hr><h1 id="搜索页"><a href="#搜索页" class="headerlink" title="搜索页"></a>搜索页</h1><img src="https://i.loli.net/2020/04/20/AoV5KxGqwUO1CWl.png" alt="AoV5KxGqwUO1CWl" style="zoom:33%;" /><hr><h1 id="详情页"><a href="#详情页" class="headerlink" title="详情页"></a>详情页</h1><p><img src="https://i.loli.net/2020/04/20/kUVtjuwmRXqS8xs.png" alt="kUVtjuwmRXqS8xs"></p><hr><h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul><li><input disabled="" type="checkbox"> 来源网站过滤</li></ul>]]></content>
     
     <summary type="html">
     
@@ -31,6 +31,33 @@
     
     </summary>
     
+    
+      <category term="研究生课程" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/"/>
+    
+      <category term="信息系统实训" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/"/>
+    
+      <category term="提交作业" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>斐讯K2路由刷机</title>
+    <link href="https://zronghui.github.io/other/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html"/>
+    <id>https://zronghui.github.io/other/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html</id>
+    <published>2020-04-20T00:03:32.000Z</published>
+    <updated>2020-04-21T16:51:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><ol><li>手机上连接无线网，查看无线网详情，可以看到路由器配置地址</li><li>手动更新 刷V22.6.526.199官方固件</li><li>刷入Breed</li><li>刷入第三方固件 </li></ol><p><a href="http://www.upantool.com/gujian/phicomm/14035.html">斐讯K2 V22.6.526.199官方固件-刷机备用下载-斐讯固件-U盘量产网</a></p><p><a href="https://tbvv.net/posts/0101-breed.html">斐讯K1、K2、K2P 刷机、刷入Breed 辅助工具 | tb</a></p><p><a href="https://github.com/moonjoin/k2-firmware">moonjoin/k2-firmware: 斐讯K2刷机，固件，breed</a></p><img src="https://i.loli.net/2020/04/20/bTgrHKL3CG8sZjy.png" alt="bTgrHKL3CG8sZjy" style="zoom:50%;" /><h3 id="桥接设置"><a href="#桥接设置" class="headerlink" title="桥接设置"></a>桥接设置</h3><p><img src="https://i.loli.net/2020/04/20/OUWHJBLTlC37ndN.png" alt="OUWHJBLTlC37ndN"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="other" scheme="https://zronghui.github.io/categories/other/"/>
     
     
   </entry>
@@ -636,27 +663,6 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
     
     
       <category term="blockchain" scheme="https://zronghui.github.io/categories/blockchain/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>shop</title>
-    <link href="https://zronghui.github.io/%E4%B9%B0%E4%B9%B0%E4%B9%B0/shop.html"/>
-    <id>https://zronghui.github.io/%E4%B9%B0%E4%B9%B0%E4%B9%B0/shop.html</id>
-    <published>2020-04-10T02:42:00.000Z</published>
-    <updated>2020-04-12T13:27:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="阿米洛-VDbox-键盘宝"><a href="#阿米洛-VDbox-键盘宝" class="headerlink" title="阿米洛 VDbox 键盘宝"></a>阿米洛 VDbox 键盘宝</h2><p>我最近在家办公的时候经常拿 iPad 来当副屏幕，但我的机械键盘没有无线功能，所以每次需要切换打字的时候都很麻烦。我希望找·一个给机械键盘增加蓝牙无线功能的方法，在进行了一阵研究后，我最终找到了「阿米洛 VDbox 键盘宝」。 </p><p><img src="https://cdn.sspai.com/2020/04/09/a6ad36bd1e1c90848faa0b3baf3361ca.png" alt="img"></p><p>这个小工具的原理很简单，其实就是一个蓝牙发射接收器。把你的机械键盘连接到它上面，然后再把电脑和键盘宝连接好就可以使用了。它可以最多配对 3 个设备，每个数字按键和设备一一对应。我平时使用 LINE 接口和台式机连接，需要切换到 iPad 打字的时候，按下对应的设备键，然后它就会自动进行连接，于是就可以用我的机械键盘在 iPad 上输入了。 </p><p><img src="https://cdn.sspai.com/2020/04/09/c7fdde0ccbb5014fd3ce37ed96930cde.png" alt="img"></p><p>我还测试了一下其他的设备，比如 Android 系统的电视和手机，发现它都可以正常使用。如果你的机械键盘没有蓝牙功能，又不希望额外再买一把的话，不妨试试这款小工具。 </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="买买买" scheme="https://zronghui.github.io/categories/%E4%B9%B0%E4%B9%B0%E4%B9%B0/"/>
     
     
   </entry>
