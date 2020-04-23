@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-04-21T16:51:53.000Z</updated>
+  <updated>2020-04-23T06:14:01.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fe-tricks</title>
+    <link href="https://zronghui.github.io/frontEnd/fe-tricks.html"/>
+    <id>https://zronghui.github.io/frontEnd/fe-tricks.html</id>
+    <published>2020-04-23T04:31:25.000Z</published>
+    <updated>2020-04-23T06:14:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="值得每日学习的-fe-资源"><a href="#值得每日学习的-fe-资源" class="headerlink" title="值得每日学习的 fe 资源"></a>值得每日学习的 fe 资源</h2><p><a href="https://github.com/haizlin/fe-interview">haizlin/fe-interview: 前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每天进步一点！每天早上5点纯手工发布面试题（死磕自己，愉悦大家）</a><br><a href="https://github.com/haizlin/fe-interview/blob/master/category/skill.md">fe-interview/skill.md at master · haizlin/fe-interview</a></p><h3 id="响应式和自适应"><a href="#响应式和自适应" class="headerlink" title="响应式和自适应"></a>响应式和自适应</h3><p><a href="https://juejin.im/entry/58b6414a128fe1006421bfa7">响应式和自适应的区别 - 前端 - 掘金</a><br><a href="https://segmentfault.com/a/1190000015759719">(12) 自适应页面的实现方式 - 前端开发 - SegmentFault 思否</a></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">min-width:</span> <span class="number">800px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.search_engines</span> &#123;</span><br><span class="line">        <span class="attribute">position</span>: fixed;</span><br><span class="line">        <span class="attribute">right</span>: <span class="number">25%</span>;</span><br><span class="line">        <span class="attribute">top</span>: <span class="number">20%</span>;</span><br><span class="line">        <span class="attribute">display</span>: inline;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改完 CSS 后，需要重命名css, 如 moon.m.0001.css  0001 是版本号，这样可以让浏览器强制加载新的 CSS</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="frontEnd" scheme="https://zronghui.github.io/categories/frontEnd/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>信息系统实训-中期PPT</title>
@@ -642,27 +663,6 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
     
     
       <category term="Leetcode weekly contest" scheme="https://zronghui.github.io/categories/Leetcode-weekly-contest/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>blockchain</title>
-    <link href="https://zronghui.github.io/blockchain/blockchain.html"/>
-    <id>https://zronghui.github.io/blockchain/blockchain.html</id>
-    <published>2020-04-10T04:11:01.000Z</published>
-    <updated>2020-04-17T11:05:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><p><a href="https://www.bilibili.com/video/BV1oJ411E7Lg">【回形针PaperClip】区块链到底是什么？_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></p><h3 id="区块链技术在政府数据治理中的应用：优势、挑战与对策"><a href="#区块链技术在政府数据治理中的应用：优势、挑战与对策" class="headerlink" title="区块链技术在政府数据治理中的应用：优势、挑战与对策"></a>区块链技术在政府数据治理中的应用：优势、挑战与对策</h3><p><a href="https://www.sohu.com/a/272144896_224692">区块链技术在政府数据治理中的应用：优势、挑战与对策</a></p><p><strong>二、政府数据治理面临的主要问题</strong></p><p>（一）政府数据质量管理差</p><p>数据质量管理差主要表现在3个方面：数据的真实性不够、数据的一致性不高、数据的时效性不强</p><p>（二）政府数据安全管控弱</p><p>数据安全管控弱主要体现在网络安全保障不力和个人隐私保护不够两个方面</p><p>（三）政府数据开放共享难</p><p>政府数据开放共享包括两层含义，一是通过信息公开的方式将政府数据传播给市场和社会，使其在“数据—决策—效益”的过程挖掘数据的价值；二是通过数据库、云端等平台实现政府数据在层级间、区域间、部门间的开放共享，让政府在政务服务中提升质量和效率。</p><p><strong>三、区块链技术在政府数据治理中的应用优势</strong></p><p>与问题对应</p><p>（一）可追溯的分布式数据系统有助于提高数据质量</p><p>各主体通过访问数据系统，将各项社会活动录入区块链或确认交易，使得有关社会事务的事件、信息能在大范围、短时间内实现快速的全网广播、匹配、核查和认定。需要强调的是，任何治理活动的信息与数据只有通过全网广播获得其他主体的核实与认可后，才能被完整地写入区块链；如果数据不实或不被认可，系统将自动拒绝写入，这有助于保证数据系统的真实性与完整性。</p><p>（二）非对称加密技术与哈希算法有助于保障数据安全</p><p>另外，区块链的数据存储在分布式的链式结构中，确保<strong>数据的多重备份</strong>，提高数据库的容错性和安全性</p><p>（三）点对点技术与智能合约有助于实现数据共享</p><p><strong>四、区块链技术应用于政府数据治理的挑战</strong></p><p>（一）理念变革：去中心化带来管理权威挑战</p><p>政府在治理体系中不再占据核心的支配地位，而与其他主体处于相对平等的地位</p><p>（二）机制变革：去信任化带来安全监管挑战</p><p>如果个人的私钥泄露，将会出现参与者的个人信息全部在网络上公布的问题，严重影响用户的个人隐私。如果个人的私钥丢失，那么个人无法再次访问区块链中的存储数据，无法获取个人的证明信息，从而影响用户的有形资产的归属情况</p><p>（三）制度变革：技术创新带来法律秩序挑战</p><p>区块链的运用与现行法律存在一定的冲突</p><h3 id="一种基于区块链的数据防篡改系统及其方法"><a href="#一种基于区块链的数据防篡改系统及其方法" class="headerlink" title="一种基于区块链的数据防篡改系统及其方法"></a>一种基于区块链的数据防篡改系统及其方法</h3><p><a href="https://www.ixueshu.com/document/57827a485ac3460c504572619bc20e72318947a18e7f9386.html">一种基于区块链的数据防篡改系统及其方法_爱学术</a></p><img src="https://i.loli.net/2020/04/17/vwF6XaQf9WNnRUz.png" alt="vwF6XaQf9WNnRUz" style="zoom:50%;" />]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="blockchain" scheme="https://zronghui.github.io/categories/blockchain/"/>
     
     
   </entry>
