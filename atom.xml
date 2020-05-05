@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-05-05T12:43:05.000Z</updated>
+  <updated>2020-05-05T14:43:44.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020-05-06</title>
+    <link href="https://zronghui.github.io/private/2020/05/2020-05-06.html"/>
+    <id>https://zronghui.github.io/private/2020/05/2020-05-06.html</id>
+    <published>2020-05-05T13:45:10.000Z</published>
+    <updated>2020-05-05T14:43:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="不好意思，密码没对哦，在检查检查呢！" data-whm="不好意思，信息无法验证！">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">嗨，请准确无误地输入密码查看哟！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="cedf392a9e2dd71c2525e2d37f107f76498b26f4a88ede5c79819826cdc0afb1">d4ddde657b62ae9d724a3e00dfabc05a45fdaf36a8bc4373ea59463028fb879dec0bab702e62ec40be4bd40d33dd8011ba51f8d43c98b9d5bc1629306176c05577d8355c1beaf3cd461fc88eb2faf0341dcf59de272fed2aba653dff2fe249ba70a664e958658d9c25bad99b53b312a4784912b3d4d824b393d3a9bf39c7fdbd9a91353baa205adaf325e03ecaed45d28078a69f9cf2ccacd2f2aa11e354b3559c4ac979673b198b7b92de870cc798d808bc2baaf32ef42c4f4b04b743fa6613d524a3eb63642c92dc881d7484bf501849da260d78b35a97bd4f01df208b423e66b6cc5c20122a10e7d2f50b4a8521792c77f9e5daf58bf40859309482a95c772f70caf3a4d7098f22e8c4189ee4f861e2d2c5078cd4e37b9f8590da2fc0c3839315554091cdffeec1fa19d9869bbc950d3eb086250d304d7d4ef19f936012571b7ee42591d36d3a2b4046afef8c62ecae332afcc678602fdfa12447ce4115a5d33fb3e710b3d474271fedf70dba810734bbf76e2bbf8550ad5c91d6a33b353ccf9e3b456bee8e18073d2326c374b584f5b56a6a6cf4beda43511154846e8a28949cced5fed64e28cd2f28d1e88fd65068c91af957a2b6c3ae735740ab5286332b2e882bcf5130a4af525fe019ba0760067ff59f773d603c0e258a74a33591f0c8920165bad0cb1e12bad3fcefaa138e4285590933dcf6e0b8d97de8f0b9e37ed165bb074fa77fccf9a51135b383a1e066a0fc45999134fecd158614d3256dace0def14140818f251014a320df4d47290b626848fdbb428d6eade9d6d78fe27fea783cfbd9508b4a883dec254f406ec31de34b55ae54a09cf8331413bae047b18c6dd980823475086c90ee45a3699c70256bad6e950c8f27467fc1f00ffdd4b44c204096bfb914cdb39f54d7a530472a6e34cc1de877ea760316bf9bdf67fa6014d46805900ca4e9281aef4913fee604a61f61a4691cfaad6cee148da26a94fa5d2c81e76c52f419eecabb187c2fc159d4052d295d67738832676c59d7ae3e70712358717d0eb39dc2e7b2abe8a0e3cc0fa33114fc733ead725bc4d45d6f1da6c9da7b43cc1311a81b4649abb835ca5cf7e24ccf4319bdf8b3a6aa66af3bffb96f3c5ad2366114e42488ed7cd63b71b562ccd73166b645adf9b78273fe1e313966a709d4f1ea4986fe7253a8aa66dbc51dbffcbdddf679b217ce3114030edb680633d8270f74e105e04b042315baa6f3d44efe35b6bded9b0c451a3733bf4758902b1ecc3a0eda47b6088f3233a67a7a62a5f1d8df06f717b4bd99bdc728d5284ca45cc9c5b9f0b7543442ca17906a77f39826230f6bbf30c04bbb75b95800c752d9f2dfff529c1161ed96973f407872f858c786401ae4a47b633e2592b066e7c8ea50f8f2df4bb973e60239b1f7983ee1e8f8d604779155fb68d31ff4a4edd9397d8c9e130ff776e4bac39d9ff5b79759b710556823a7932a61979508d9c1ad7ff73d93e9850269070e0181e87359e4d0ced85046b98e03593648e83ba74d1644483ee58c94cb027c6fd23f7369d72ff5cf0d212ecff1cd6185810126edfeeee10be210d985443d43d603abd923eb84</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      咦，这是一篇加密文章，好像需要输入密码才能查看呢！
+    
+    </summary>
+    
+    
+      <category term="private" scheme="https://zronghui.github.io/categories/private/"/>
+    
+      <category term="2020" scheme="https://zronghui.github.io/categories/private/2020/"/>
+    
+      <category term="5" scheme="https://zronghui.github.io/categories/private/2020/5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>to-read</title>
+    <link href="https://zronghui.github.io/todo/to-read.html"/>
+    <id>https://zronghui.github.io/todo/to-read.html</id>
+    <published>2020-05-05T13:41:11.000Z</published>
+    <updated>2020-05-05T14:43:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="05-04"><a href="#05-04" class="headerlink" title="05-04"></a>05-04</h2><p><a href="https://mp.weixin.qq.com/s/Cimeyo4cVQsF-MfHBsNgGg?1=a">https://mp.weixin.qq.com/s/Cimeyo4cVQsF-MfHBsNgGg?1=a</a><br><a href="https://mp.weixin.qq.com/s/nFXtvH-i6SwSbyWttDaAeg">读懂MySQL Explain结果，上亿数据的查询耗时从几分钟降到63毫秒</a><br><a href="https://juejin.im/post/5e5622dae51d4526f55f04e6">记一次 SQL 优化过程，从 7.2s 到 10ms - 掘金</a><br><a href="https://juejin.im/post/5e4f7ccdf265da574a1ead44">考前复习必备MySQL数据库（关系型数据库管理系统） - 掘金</a><br><a href="https://mp.weixin.qq.com/s/CTDEFxTKdk0qxK9VNSEIqw">数据库密码配置项都不加密？心也太大了！</a><br><a href="https://linux.cn/article-12053-1.html?utm_source=rss&utm_medium=rss">技术|必知必会的 Vim 编辑器基础命令</a><br><a href="https://linux.cn/article-12064-1.html?utm_source=rss&utm_medium=rss">技术|使用 Python 在 GitHub 上运行你的博客</a><br><a href="https://linux.cn/article-12011-1.html?utm_source=rss&utm_medium=rss">技术|10 篇对初学者和专家都有用的 Linux 命令教程</a><br><a href="http://www.ruanyifeng.com/blog/2020/02/software-outsourcing.html">我的外包经验：印度、中国和菲律宾（译文） - 阮一峰的网络日志</a><br><a href="https://linux.cn/article-12007-1.html?utm_source=rss&utm_medium=rss">容器与云|适用于初学者的基本 kubectl 和 Helm 命令</a><br><a href="https://juejin.im/post/5eaa61735188256d976df55d">又一款Docker/K8s管理平台的瑞士军刀 - 掘金</a><br><a href="https://linux.cn/article-12048-1.html?utm_source=rss&utm_medium=rss">分享|4 个 Linux 命令行下的 Markdown 工具</a><br><a href="https://juejin.im/post/5e58905f6fb9a07caa270bb0">写给大忙人看的操作系统 - 掘金</a><br><a href="https://mp.weixin.qq.com/s/xYeF8bE9JE6IbL7HoDyURg">从后端开发转职前端开发，我学到了什么？</a><br><a href="https://mp.weixin.qq.com/s/qTWVAUlm7NGe2UhPUg-S2g">一日一学–如何对数值型特征进行分桶</a><br><a href="https://mr-houzi.com/2019/03/18/use-phone-capture-package/">https://mr-houzi.com/2019/03/18/use-phone-capture-package/</a><br><a href="https://mp.weixin.qq.com/s/lvbZamr4_t2GKDiuEWi_IQ">redis 分布式锁的 5个坑，真是又大又深</a><br><a href="https://juejin.im/post/5eabffc7f265da7bed6b235c">[译]编写更快、更好的JavaScript的13个技巧 - 掘金</a><br><a href="https://mp.weixin.qq.com/s/WEizNquzbZC8_yBWBHYL-A">Redis基础知识总结（面试必备）</a><br><a href="https://mp.weixin.qq.com/s/VAIVp2LrxPNil77-YUvjcg">MySQL 数据库的提速器-写缓存（Change Buffer）</a><br><a href="https://juejin.im/post/5ea7f9ef5188256d9c25988e">K8s 资源全汇总 | K8s 大咖带你 31 堂课从零入门 K8s - 掘金</a><br><a href="https://juejin.im/post/5e555bf56fb9a07ce01a2941">K8S ? K3S ! - 掘金</a><br><a href="https://mp.weixin.qq.com/s/v2uZnkWhGKXvTJu87iUWLg">Java8的Stream流真香，没体验过的永远不知道</a><br><a href="https://mp.weixin.qq.com/s/mlWuigUL2dQYwIHisec_7w">Git 分支设计规范</a><br><a href="https://github.com/Germey?tab=stars">Germey (崔庆才丨静觅) / Starred</a><br><a href="https://cloud.tencent.com/developer/article/1529651">Elasticsearch数据迁移与集群容灾 - 云+社区 - 腾讯云</a><br><a href="https://yq.aliyun.com/articles/599185">Elasticsearch 跨集群同步-云栖社区-阿里云</a><br><a href="https://segmentfault.com/a/1190000020395065">(16) ElasticSearch分页与深度分页问题解决 - 大数据学习笔记 - SegmentFault 思否</a><br><a href="https://mp.weixin.qq.com/s/ASjH1JmybIVXEAKfM4ie2A">Docker搭建与配置检查</a><br><a href="https://juejin.im/post/5eac74456fb9a0437e0e898a">Docker实战之Gitlab搭建 - 掘金</a><br><a href="https://juejin.im/post/5ea25cc66fb9a03c9037aad7">Docker 还需要学习吗？ - 掘金</a><br><a href="https://www.startutorial.com/articles/view/debug-mysql-slow-query">Debug MySQL slow query</a><br><a href="https://mp.weixin.qq.com/s/f9N13fnyTtnu2D5sKZiu9w">3w字深度好文|Redis面试全攻略，读完这个就可以和面试官大战几个回合了</a><br><a href="https://juejin.im/post/5e529dd9f265da570b3f2a35">7个有用的JavaScript技巧 - 掘金</a><br><a href="https://mp.weixin.qq.com/s/rDypsB9yAua9uX2aC9_y1A">2020 年为什么要选择 Go 并放弃 Python</a><br><a href="https://juejin.im/post/5e57d0dfe51d4526ce6147f2">10分钟教你手写8个常用的自定义hooks - 掘金</a><br><a href="https://github.com/0voice/from_coder_to_expert">0voice/from_coder_to_expert: 2019年最新总结，从程序员到CTO，从专业走向卓越，分享大牛企业内部pdf与PPT</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="todo" scheme="https://zronghui.github.io/categories/todo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>docker-todo</title>
+    <link href="https://zronghui.github.io/todo/docker-todo.html"/>
+    <id>https://zronghui.github.io/todo/docker-todo.html</id>
+    <published>2020-05-05T13:27:03.000Z</published>
+    <updated>2020-05-05T14:43:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><p><a href="https://github.com/nondanee/UnblockNeteaseMusic">nondanee/UnblockNeteaseMusic: Revive unavailable songs for Netease Cloud Music</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="todo" scheme="https://zronghui.github.io/categories/todo/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>leetcode 387. First Unique Character in a String</title>
@@ -121,9 +188,9 @@ Then 4 is the first bad version. &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt
     <link href="https://zronghui.github.io/private/2020/05/2020-05-05.html"/>
     <id>https://zronghui.github.io/private/2020/05/2020-05-05.html</id>
     <published>2020-05-05T02:06:00.000Z</published>
-    <updated>2020-05-05T12:43:05.000Z</updated>
+    <updated>2020-05-05T14:43:44.000Z</updated>
     
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="不好意思，密码没对哦，在检查检查呢！" data-whm="不好意思，信息无法验证！">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">嗨，请准确无误地输入密码查看哟！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="c6fdee03a31f1972030588bbeded09afe489b456162d92da280d4572a0727bde">d4ddde657b62ae9d724a3e00dfabc05a45fdaf36a8bc4373ea59463028fb879dec0bab702e62ec40be4bd40d33dd8011ba51f8d43c98b9d5bc1629306176c05577d8355c1beaf3cd461fc88eb2faf0341dcf59de272fed2aba653dff2fe249ba70a664e958658d9c25bad99b53b312a4784912b3d4d824b393d3a9bf39c7fdbd9a91353baa205adaf325e03ecaed45d28078a69f9cf2ccacd2f2aa11e354b3559c4ac979673b198b7b92de870cc798d808bc2baaf32ef42c4f4b04b743fa6613d524a3eb63642c92dc881d7484bf501849da260d78b35a97bd4f01df208b423e66b6cc5c20122a10e7d2f50b4a85217932c5af0ed34d2756766311258d19f0b0af3245a5f26b60bca23e36f84f048ddb59bdcc24daccff4d5853c21ae445eb3fd6e2ae4463ae56fa26ec4a5a822d06d7a597a2a1a659ded102fc1a53a5f25d89fe02f6e87c1f824084dc3c241b64ee13c62c879cc15a8627f934f422cd0b61965b82681e801533a1b5cb8599151819e81eb12c8cd4cf65a523fd091ce62dcbf49b84dc75c7a40066910deaf2748b838eb6dbef845bedf40b3de049706f0f7ede967f57e50907efee0b650861e28ed50cede324ebe88037c45402142058248f6ad9842dfe695fa34bec04d2539612dc48d17d5eae997b0e4b21aef75df9711a6e4002bfa74682c1edb7f9dd2668d14dafcc3b8195a3c34f5864fa57d750c457293c8fa084e3501c8f2a4077fde390b73f668da3c48f7888f220a942b975d43bcf4c61346dd7fbbd4b14e5a18148615703a6fed7d0c854bc85969ecb5ac9f9b63bf1a931483ce1a707eb049d991334ad9233f22f8ccc9748501b29b1358af172d391527b4c06f13b60bdee64af9f5b91407c5622ca27fc5ba4850a454019f99726422fcad94f751a51a6029b37b926f66bc960613afbf90d3ebf065000c226d8fbc286a977e81584d4695e2a8e080cc36993e110657aa26b2fe3a76d146511f96dbf9d0a0bdada5827f82c733799d19c981729828f25a4b564399262a3e66b70f551cbc7ad24859d587bbfeadfcac4621e7f9a3030fd91579eef2a04bbd0e1487eb19d5840f2d42376df67af56ad6f5ce2b4ead08cef7fe08d88e37cd70c323cfa0dc23fa4b66578f8a59e3d0dfd91af127992173db69f9541dbdad37730db9cb84355cf582888fb50ab08f9ca111b24ee20d488cd7d1787f8a65c99b55f826720d845d29f641ca4d0f41e571bb343ab16241695d4d78e3606d0b400de4601d38a4dbb431b4db8dca4aaaf5458c84bce760c242f21546018b1344e420f5fcc00837e457c09806b5a665fc06a2cff4d457e661fa29888784df2b60e57f3a2d24e4aed2825738964271a53b99425ce228904aafd5e48b5dacd52a46bb4fa137e5ff503450508dcda278b151a199ccaca456c2eb77cce14d92356f31d615415e53941408b9d3caa28142fd13b9f400a678351133d9afeb380eef1665ba6b49f5995bb28cc2e92b78854a94a8546aff84752efdb0818863bbb6957e84f2809b46a1f47357dbc58fdd06538e03dbc0aeea88ee2d470762417895b444eced375bb16721d4b5a505a91d3561edd9e4dd53efb7fc64f44f9ae1aabb0889407f2b076788ff3b982864edb9f841b13609f3d903cbb4f6c34200b4bd7563992e42ff89e3c371d7367adda9e6b5e758e6b582e12d4c33064b77a4ff415196171d9173b06d4601bab25bed6d8742bcc981af90e0e5ba3ad4aa219f9b6336821adc9fec577b6fd2860c6595c328d24e5442ca18e453569c8cbc75a90a5a1c647f3c82f5b9f1e65ce45661850821c9ce9fadfffea216a88f625800500d5df9e3278b73f26129f51d0ab9a1b2023641e64c3e1d353cfc252355ea0bebe39c906d6d1c630ea32d69d83bab792d121e9f6f2d4535f46d0f59791ba4e05d93bf029f303f1f72c2783e82d8ab03794912b41b51c2b8a2d12f5cd167884abfc3e4ca4e0af1870b22a15edef</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="不好意思，密码没对哦，在检查检查呢！" data-whm="不好意思，信息无法验证！">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">嗨，请准确无误地输入密码查看哟！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="5001eb8a1995512a5f1ee85829eb1817b1637bb47c9255cab0aee5b56f3765ba">d4ddde657b62ae9d724a3e00dfabc05a45fdaf36a8bc4373ea59463028fb879dec0bab702e62ec40be4bd40d33dd8011ba51f8d43c98b9d5bc1629306176c05577d8355c1beaf3cd461fc88eb2faf0341dcf59de272fed2aba653dff2fe249ba70a664e958658d9c25bad99b53b312a4784912b3d4d824b393d3a9bf39c7fdbd9a91353baa205adaf325e03ecaed45d28078a69f9cf2ccacd2f2aa11e354b3559c4ac979673b198b7b92de870cc798d808bc2baaf32ef42c4f4b04b743fa6613d524a3eb63642c92dc881d7484bf501849da260d78b35a97bd4f01df208b423e66b6cc5c20122a10e7d2f50b4a85217932c5af0ed34d2756766311258d19f0b0af3245a5f26b60bca23e36f84f048ddb59bdcc24daccff4d5853c21ae445eb3fd6e2ae4463ae56fa26ec4a5a822d06d7a597a2a1a659ded102fc1a53a5f25d89fe02f6e87c1f824084dc3c241b64ee13c62c879cc15a8627f934f422cd0b61965b82681e801533a1b5cb8599151819e81eb12c8cd4cf65a523fd091ce62dcbf49b84dc75c7a40066910deaf2748b838eb6dbef845bedf40b3de049706f0f7ede967f57e50907efee0b650861e28ed50cede324ebe88037c45402142058248f6ad9842dfe695fa34bec04d2539612dc48d17d5eae997b0e4b21aef75df9711a6e4002bfa74682c1edb7f9dd2668d14dafcc3b8195a3c34f5864fa57d750c457293c8fa084e3501c8f2a4077fde390b73f668da3c48f7888f220a942b975d43bcf4c61346dd7fbbd4b14e5a18148615703a6fed7d0c854bc85969ecb5ac9f9b63bf1a931483ce1a707eb049d991334ad9233f22f8ccc9748501b29b1358af172d391527b4c06f13b60bdee64af9f5b91407c5622ca27fc5ba4850a454019f99726422fcad94f751a51a6029b37b926f66bc960613afbf90d3ebf065000c226d8fbc286a977e81584d4695e2a8e080cc36993e110657aa26b2fe3a76d146511f96dbf9d0a0bdada5827f82c733799d19c981729828f25a4b564399262a3e66b70f551cbc7ad24859d587bbfeadfcac4621e7f9a3030fd91579eef2a04bbd0e1487eb19d5840f2d42376df67af56ad6f5ce2b4ead08cef7fe08d88e37cd70c323cfa0dc23fa4b66578f8a59e3d0dfd91af127992173db69f9541dbdad37730db9cb84355cf582888fb50ab08f9ca111b24ee7b7b96e30e26f95419b43b0eaf6e2107ca1a6d4c422b9d983149112fbbe4dc127f6996c9e8821e8002890c29b44f0d5d458fe0dd650c297361a1175cd83a57eff9265d9e4ca9f6ebeab43f7026daa5eca1716d50829ba65352654ead296a70fde9f4a4ef9564317c17462ccdd5d0c6674b535b683f6cc83d933b94d5245548228170e5f171c0435dea222ee9e4e7a08e6e1d72570f8abc5286bc6e7cb6d5dca4e2d11e59b1645ab2434c2fa2cd1ca7735e8de059bc8a601f419047991d4fb7e9af59fe48708a6ad86e927d72e0d710d954cc903461785ee1c9d1aef1c1845aaf453980bd1b0b4362650f8532bff87244e7a194815ad3fdcce616be6007b968a44c477a8ca793ff131c7388cdddf55856ba4bb0efc6358c33efbd6ade1487053461d13c278d8565d9b9c14bff8de18b3429122a2fd3d0bf967fb7dce51e847701a68446b4feb4919c4053adafe85d646cbcfb95190a7ca41168117c134a69c6a2d114f02e21d1b3091eee6e6318813c7685d6fb9cf869baa2b016951085e61042f54dc46ae2b4212d8e3ad152ff2e89d042e1fc8d3c19ed8f2fb3cec12cbcbc5a3ade1d4774c6fa8cf58000b1ad8522e35b7608dd799dcd4bc693c5284a3ecb3299e460004a32c177c44468fde34cb050f7967ff7bca23b280dfb90369b34547b0053eda3b96b786dcc7dec261066f5c3f27997b3523bafa49813091af82fd2ff4519c1ab24455a84b38fe9294c4e9129dcf25a1a1210eddbed5c6f4f683b305833be51bce60525347bd4b1894c02beb67d5f7567ab0de1425728709f88d5b8e3</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -440,86 +507,6 @@ Then 4 is the first bad version. &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt
     
       <category term="提交作业" scheme="https://zronghui.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E8%AF%BE%E7%A8%8B/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%AE%AD/%E6%8F%90%E4%BA%A4%E4%BD%9C%E4%B8%9A/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>斐讯K2路由刷机</title>
-    <link href="https://zronghui.github.io/other/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html"/>
-    <id>https://zronghui.github.io/other/%E6%96%90%E8%AE%AFK2%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA.html</id>
-    <published>2020-04-20T00:03:32.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><ol><li>手机上连接无线网，查看无线网详情，可以看到路由器配置地址</li><li>手动更新 刷V22.6.526.199官方固件</li><li>刷入Breed</li><li>刷入第三方固件 </li></ol><p><a href="http://www.upantool.com/gujian/phicomm/14035.html">斐讯K2 V22.6.526.199官方固件-刷机备用下载-斐讯固件-U盘量产网</a></p><p><a href="https://tbvv.net/posts/0101-breed.html">斐讯K1、K2、K2P 刷机、刷入Breed 辅助工具 | tb</a></p><p><a href="https://github.com/moonjoin/k2-firmware">moonjoin/k2-firmware: 斐讯K2刷机，固件，breed</a></p><img src="https://i.loli.net/2020/04/20/bTgrHKL3CG8sZjy.png" alt="bTgrHKL3CG8sZjy" style="zoom:50%;" /><h3 id="桥接设置"><a href="#桥接设置" class="headerlink" title="桥接设置"></a>桥接设置</h3><p><img src="https://i.loli.net/2020/04/20/OUWHJBLTlC37ndN.png" alt="OUWHJBLTlC37ndN"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="other" scheme="https://zronghui.github.io/categories/other/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>biweekly-contest-24</title>
-    <link href="https://zronghui.github.io/biweekly-contest-24.html"/>
-    <id>https://zronghui.github.io/biweekly-contest-24.html</id>
-    <published>2020-04-19T01:56:34.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode 64. Minimum Path Sum</title>
-    <link href="https://zronghui.github.io/leetcode/leetcode-6**/leetcode-64-Minimum-Path-Sum.html"/>
-    <id>https://zronghui.github.io/leetcode/leetcode-6**/leetcode-64-Minimum-Path-Sum.html</id>
-    <published>2020-04-18T10:29:46.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/minimum-path-sum/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/minimum-path-sum/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given a <em>m</em> x <em>n</em> grid filled with non-negative numbers, find a path from top<br>left to bottom right which <em>minimizes</em> the sum of all numbers along its path.</p><p><strong>Note:</strong> You can only move either down or right at any point in time.</p><p><strong>Example:</strong></p><pre><code>Input:[  [1,3,1],  [1,5,1],  [4,2,1]]Output: 7Explanation: Because the path 1-&gt;3-&gt;1-&gt;1-&gt;1 minimizes the sum.</code></pre><p><strong>Tags:</strong> Array, Dynamic Programming</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="comment"># 3. dp</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minPathSum</span><span class="params">(self, grid: List[List[int]])</span> -&gt; int:</span></span><br><span class="line">        n = len(grid)</span><br><span class="line">        m = len(grid[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(m):</span><br><span class="line">                <span class="keyword">if</span> i==<span class="number">0</span> <span class="keyword">and</span> j==<span class="number">0</span>:</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">                <span class="keyword">elif</span> i==<span class="number">0</span>:</span><br><span class="line">                    grid[i][j] += grid[i][j<span class="number">-1</span>]</span><br><span class="line">                <span class="keyword">elif</span> j==<span class="number">0</span>:</span><br><span class="line">                    grid[i][j] += grid[i<span class="number">-1</span>][j]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    grid[i][j] += min(grid[i<span class="number">-1</span>][j], grid[i][j<span class="number">-1</span>])</span><br><span class="line">        <span class="keyword">return</span> grid[<span class="number">-1</span>][<span class="number">-1</span>]</span><br><span class="line">    <span class="comment">#  1. 简单的递归</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minPathSum1</span><span class="params">(self, grid: List[List[int]])</span> -&gt; int:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">helper</span><span class="params">(grid, n, m, i, j)</span>:</span></span><br><span class="line">            res = grid[i][j]</span><br><span class="line">            <span class="keyword">if</span> i==n<span class="number">-1</span> <span class="keyword">and</span> j==m<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">return</span> res</span><br><span class="line">            <span class="keyword">elif</span> i==n<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">return</span> res + helper(grid, n, m, i, j+<span class="number">1</span>)</span><br><span class="line">            <span class="keyword">elif</span> j==m<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">return</span> res + helper(grid, n, m, i+<span class="number">1</span>, j)</span><br><span class="line">            <span class="keyword">return</span> res + min(helper(grid, n, m, i, j+<span class="number">1</span>), helper(grid, n, m, i+<span class="number">1</span>, j))</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> grid <span class="keyword">or</span> <span class="keyword">not</span> grid[<span class="number">0</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> helper(grid, len(grid), len(grid[<span class="number">0</span>]), <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 2. 递归 + 存储 递归过程值</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minPathSum2</span><span class="params">(self, grid: List[List[int]])</span> -&gt; int:</span></span><br><span class="line">        n = len(grid)</span><br><span class="line">        m = len(grid[<span class="number">0</span>])</span><br><span class="line">        cache = [[<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(m)]<span class="keyword">for</span> _ <span class="keyword">in</span> range(n)]</span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">helper</span><span class="params">(grid, n, m, i, j)</span>:</span></span><br><span class="line">            res = grid[i][j]</span><br><span class="line">            <span class="keyword">if</span> i==n<span class="number">-1</span> <span class="keyword">and</span> j==m<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">return</span> res</span><br><span class="line">            <span class="keyword">elif</span> i==n<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">if</span> cache[i][j+<span class="number">1</span>]:</span><br><span class="line">                    <span class="keyword">return</span> res+cache[i][j+<span class="number">1</span>]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    t = helper(grid, n, m, i, j+<span class="number">1</span>)</span><br><span class="line">                    cache[i][j+<span class="number">1</span>] = t</span><br><span class="line">                    <span class="keyword">return</span> res + t</span><br><span class="line">            <span class="keyword">elif</span> j==m<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">if</span> cache[i+<span class="number">1</span>][j]:</span><br><span class="line">                    <span class="keyword">return</span> res+cache[i+<span class="number">1</span>][j]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    t = helper(grid, n, m, i+<span class="number">1</span>, j)</span><br><span class="line">                    cache[i+<span class="number">1</span>][j] = t</span><br><span class="line">                    <span class="keyword">return</span> res + t</span><br><span class="line">                </span><br><span class="line">            <span class="keyword">if</span> cache[i][j+<span class="number">1</span>]:</span><br><span class="line">                t1 = cache[i][j+<span class="number">1</span>]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                t1 = helper(grid, n, m, i, j+<span class="number">1</span>)</span><br><span class="line">                cache[i][j+<span class="number">1</span>] = t1</span><br><span class="line">            <span class="keyword">if</span> cache[i+<span class="number">1</span>][j]:</span><br><span class="line">                t2 = cache[i+<span class="number">1</span>][j] </span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                t2 = helper(grid, n, m, i+<span class="number">1</span>, j)</span><br><span class="line">                cache[i+<span class="number">1</span>][j] = t2</span><br><span class="line">            <span class="keyword">return</span> res + min(t1, t2)</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> grid <span class="keyword">or</span> <span class="keyword">not</span> grid[<span class="number">0</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> helper(grid, n, m, <span class="number">0</span>, <span class="number">0</span>)</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-path-sum/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/minimum-path-sum/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given a &lt;em&gt;m&lt;/em&gt; x &lt;em&gt;n&lt;/em&gt; grid filled with non-negative numbers, find a path from top&lt;br&gt;left to bottom right which &lt;em&gt;minimizes&lt;/em&gt; the sum of all numbers along its path.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can only move either down or right at any point in time.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input:
-[
-  [1,3,1],
-  [1,5,1],
-  [4,2,1]
-]
-Output: 7
-Explanation: Because the path 1-&amp;gt;3-&amp;gt;1-&amp;gt;1-&amp;gt;1 minimizes the sum.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Dynamic Programming&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
-&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="leetcode-6**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-6/"/>
-    
-    
-      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
-    
-      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
     
   </entry>
   
