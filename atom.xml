@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-05-05T01:38:57.000Z</updated>
+  <updated>2020-05-05T12:43:05.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,131 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 387. First Unique Character in a String</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-3**/leetcode-387-First-Unique-Character-in-a-String%20(copy).html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-3**/leetcode-387-First-Unique-Character-in-a-String%20(copy).html</id>
+    <published>2020-05-05T12:42:43.000Z</published>
+    <updated>2020-05-05T12:43:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/first-unique-character-in-a-string/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/first-unique-character-in-a-string/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given a string, find the first non-repeating character in it and return it’s<br>index. If it doesn’t exist, return -1.</p><p><strong>Examples:</strong></p><pre><code>s = &quot;leetcode&quot;return 0.s = &quot;loveleetcode&quot;,return 2.</code></pre><p><strong>Note:</strong> You may assume the string contain only lowercase letters.</p><p><strong>Tags:</strong> Hash Table, String</p><p><strong>Difficulty:</strong> Easy</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    <span class="function">def <span class="title">firstUniqChar</span><span class="params">(self, ss: str)</span> -&gt; <span class="keyword">int</span>:</span></span><br><span class="line"><span class="function">        # 添加未重复的 字母：index</span></span><br><span class="line"><span class="function">        m </span>= &#123;&#125;</span><br><span class="line">        # 重复的字母</span><br><span class="line">        s = set()</span><br><span class="line">        <span class="keyword">for</span> i, <span class="function">c in <span class="title">enumerate</span><span class="params">(ss)</span>:</span></span><br><span class="line"><span class="function">            <span class="keyword">if</span> c in s:</span></span><br><span class="line"><span class="function">                <span class="keyword">continue</span></span></span><br><span class="line"><span class="function">            <span class="keyword">if</span> c in m:</span></span><br><span class="line"><span class="function">                del m[c]</span></span><br><span class="line"><span class="function">                s.<span class="title">add</span><span class="params">(c)</span></span></span><br><span class="line"><span class="function">            <span class="keyword">else</span>:</span></span><br><span class="line"><span class="function">                m[c] </span>= i</span><br><span class="line">        <span class="keyword">return</span> min(m.items(), key=lambda i:i[<span class="number">1</span>])[<span class="number">1</span>] <span class="keyword">if</span> m <span class="keyword">else</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/first-unique-character-in-a-string/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/first-unique-character-in-a-string/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given a string, find the first non-repeating character in it and return it’s&lt;br&gt;index. If it doesn’t exist, return -1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;s = &amp;quot;leetcode&amp;quot;
+return 0.
+
+s = &amp;quot;loveleetcode&amp;quot;,
+return 2.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may assume the string contain only lowercase letters.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Hash Table, String&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-3**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-3/"/>
+    
+    
+      <category term="Hash Table" scheme="https://zronghui.github.io/tags/Hash-Table/"/>
+    
+      <category term="String" scheme="https://zronghui.github.io/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 278. First Bad Version</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-2**/leetcode-278-First-Bad-Version%20(copy).html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-2**/leetcode-278-First-Bad-Version%20(copy).html</id>
+    <published>2020-05-05T02:26:02.000Z</published>
+    <updated>2020-05-05T12:43:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/first-bad-version/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/first-bad-version/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>You are a product manager and currently leading a team to develop a new<br>product. Unfortunately, the latest version of your product fails the quality<br>check. Since each version is developed based on the previous version, all the<br>versions after a bad version are also bad.</p><p>Suppose you have <code>n</code> versions <code>[1, 2, ..., n]</code> and you want to find out the<br>first bad one, which causes all the following ones to be bad.</p><p>You are given an API <code>bool isBadVersion(version)</code> which will return whether<br><code>version</code> is bad. Implement a function to find the first bad version. You<br>should minimize the number of calls to the API.</p><p><strong>Example:</strong></p><pre><code>Given n = 5, and version = 4 is the first bad version.call isBadVersion(3) -&gt; falsecall isBadVersion(5) -&gt; truecall isBadVersion(4) -&gt; trueThen 4 is the first bad version. </code></pre><p><strong>Tags:</strong> Binary Search</p><p><strong>Difficulty:</strong> Easy</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># The isBadVersion API is already defined for you.</span></span><br><span class="line"><span class="comment"># @param version, an integer</span></span><br><span class="line"><span class="comment"># @return a bool</span></span><br><span class="line"><span class="comment"># def isBadVersion(version):</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">firstBadVersion</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type n: int</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        left, right = <span class="number">1</span>, n</span><br><span class="line">        <span class="keyword">while</span> left&lt;right:</span><br><span class="line">            mid = left+(right-left)//<span class="number">2</span></span><br><span class="line">            <span class="comment"># 最后 left right 都指向第一个 badVersion</span></span><br><span class="line">            <span class="keyword">if</span> isBadVersion(mid):</span><br><span class="line">                right = mid</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                left = mid + <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> left</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/first-bad-version/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/first-bad-version/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;You are a product manager and currently leading a team to develop a new&lt;br&gt;product. Unfortunately, the latest version of your product fails the quality&lt;br&gt;check. Since each version is developed based on the previous version, all the&lt;br&gt;versions after a bad version are also bad.&lt;/p&gt;
+&lt;p&gt;Suppose you have &lt;code&gt;n&lt;/code&gt; versions &lt;code&gt;[1, 2, ..., n]&lt;/code&gt; and you want to find out the&lt;br&gt;first bad one, which causes all the following ones to be bad.&lt;/p&gt;
+&lt;p&gt;You are given an API &lt;code&gt;bool isBadVersion(version)&lt;/code&gt; which will return whether&lt;br&gt;&lt;code&gt;version&lt;/code&gt; is bad. Implement a function to find the first bad version. You&lt;br&gt;should minimize the number of calls to the API.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given n = 5, and version = 4 is the first bad version.
+
+call isBadVersion(3) -&amp;gt; false
+call isBadVersion(5) -&amp;gt; true
+call isBadVersion(4) -&amp;gt; true
+
+Then 4 is the first bad version. &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Binary Search&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-2**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-2/"/>
+    
+    
+      <category term="Binary Search" scheme="https://zronghui.github.io/tags/Binary-Search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-05</title>
+    <link href="https://zronghui.github.io/private/2020/05/2020-05.html"/>
+    <id>https://zronghui.github.io/private/2020/05/2020-05.html</id>
+    <published>2020-05-05T02:07:05.000Z</published>
+    <updated>2020-05-05T12:43:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><p><a href="https://github.com/huihut/interview#-problems">huihut/interview: 📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。</a></p><p><a href="https://github.com/topics/interview-preparation?utm_campaign=explore-email&utm_medium=email&utm_source=newsletter&utm_term=daily">interview-preparation · GitHub Topics</a></p><ul><li><input disabled="" type="checkbox"> 1.再次实现排序</li><li><input disabled="" type="checkbox"> 2.操作系统</li><li><input disabled="" type="checkbox"> 3.计算机网络</li><li><input disabled="" type="checkbox"> 4.玩 docker</li><li><input disabled="" type="checkbox"> 5.玩 k8s</li><li><input disabled="" type="checkbox"> 6.玩 Redis</li><li><input disabled="" type="checkbox"> 7.区块链</li><li><input disabled="" type="checkbox"> 8.信息系统</li><li><input disabled="" type="checkbox"> 9.软件测试实训</li><li><input disabled="" type="checkbox"> 10.银行还贷款</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="private" scheme="https://zronghui.github.io/categories/private/"/>
+    
+      <category term="2020" scheme="https://zronghui.github.io/categories/private/2020/"/>
+    
+      <category term="5" scheme="https://zronghui.github.io/categories/private/2020/5/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020-05-05</title>
+    <link href="https://zronghui.github.io/private/2020/05/2020-05-05.html"/>
+    <id>https://zronghui.github.io/private/2020/05/2020-05-05.html</id>
+    <published>2020-05-05T02:06:00.000Z</published>
+    <updated>2020-05-05T12:43:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="不好意思，密码没对哦，在检查检查呢！" data-whm="不好意思，信息无法验证！">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">嗨，请准确无误地输入密码查看哟！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="c6fdee03a31f1972030588bbeded09afe489b456162d92da280d4572a0727bde">d4ddde657b62ae9d724a3e00dfabc05a45fdaf36a8bc4373ea59463028fb879dec0bab702e62ec40be4bd40d33dd8011ba51f8d43c98b9d5bc1629306176c05577d8355c1beaf3cd461fc88eb2faf0341dcf59de272fed2aba653dff2fe249ba70a664e958658d9c25bad99b53b312a4784912b3d4d824b393d3a9bf39c7fdbd9a91353baa205adaf325e03ecaed45d28078a69f9cf2ccacd2f2aa11e354b3559c4ac979673b198b7b92de870cc798d808bc2baaf32ef42c4f4b04b743fa6613d524a3eb63642c92dc881d7484bf501849da260d78b35a97bd4f01df208b423e66b6cc5c20122a10e7d2f50b4a85217932c5af0ed34d2756766311258d19f0b0af3245a5f26b60bca23e36f84f048ddb59bdcc24daccff4d5853c21ae445eb3fd6e2ae4463ae56fa26ec4a5a822d06d7a597a2a1a659ded102fc1a53a5f25d89fe02f6e87c1f824084dc3c241b64ee13c62c879cc15a8627f934f422cd0b61965b82681e801533a1b5cb8599151819e81eb12c8cd4cf65a523fd091ce62dcbf49b84dc75c7a40066910deaf2748b838eb6dbef845bedf40b3de049706f0f7ede967f57e50907efee0b650861e28ed50cede324ebe88037c45402142058248f6ad9842dfe695fa34bec04d2539612dc48d17d5eae997b0e4b21aef75df9711a6e4002bfa74682c1edb7f9dd2668d14dafcc3b8195a3c34f5864fa57d750c457293c8fa084e3501c8f2a4077fde390b73f668da3c48f7888f220a942b975d43bcf4c61346dd7fbbd4b14e5a18148615703a6fed7d0c854bc85969ecb5ac9f9b63bf1a931483ce1a707eb049d991334ad9233f22f8ccc9748501b29b1358af172d391527b4c06f13b60bdee64af9f5b91407c5622ca27fc5ba4850a454019f99726422fcad94f751a51a6029b37b926f66bc960613afbf90d3ebf065000c226d8fbc286a977e81584d4695e2a8e080cc36993e110657aa26b2fe3a76d146511f96dbf9d0a0bdada5827f82c733799d19c981729828f25a4b564399262a3e66b70f551cbc7ad24859d587bbfeadfcac4621e7f9a3030fd91579eef2a04bbd0e1487eb19d5840f2d42376df67af56ad6f5ce2b4ead08cef7fe08d88e37cd70c323cfa0dc23fa4b66578f8a59e3d0dfd91af127992173db69f9541dbdad37730db9cb84355cf582888fb50ab08f9ca111b24ee20d488cd7d1787f8a65c99b55f826720d845d29f641ca4d0f41e571bb343ab16241695d4d78e3606d0b400de4601d38a4dbb431b4db8dca4aaaf5458c84bce760c242f21546018b1344e420f5fcc00837e457c09806b5a665fc06a2cff4d457e661fa29888784df2b60e57f3a2d24e4aed2825738964271a53b99425ce228904aafd5e48b5dacd52a46bb4fa137e5ff503450508dcda278b151a199ccaca456c2eb77cce14d92356f31d615415e53941408b9d3caa28142fd13b9f400a678351133d9afeb380eef1665ba6b49f5995bb28cc2e92b78854a94a8546aff84752efdb0818863bbb6957e84f2809b46a1f47357dbc58fdd06538e03dbc0aeea88ee2d470762417895b444eced375bb16721d4b5a505a91d3561edd9e4dd53efb7fc64f44f9ae1aabb0889407f2b076788ff3b982864edb9f841b13609f3d903cbb4f6c34200b4bd7563992e42ff89e3c371d7367adda9e6b5e758e6b582e12d4c33064b77a4ff415196171d9173b06d4601bab25bed6d8742bcc981af90e0e5ba3ad4aa219f9b6336821adc9fec577b6fd2860c6595c328d24e5442ca18e453569c8cbc75a90a5a1c647f3c82f5b9f1e65ce45661850821c9ce9fadfffea216a88f625800500d5df9e3278b73f26129f51d0ab9a1b2023641e64c3e1d353cfc252355ea0bebe39c906d6d1c630ea32d69d83bab792d121e9f6f2d4535f46d0f59791ba4e05d93bf029f303f1f72c2783e82d8ab03794912b41b51c2b8a2d12f5cd167884abfc3e4ca4e0af1870b22a15edef</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      咦，这是一篇加密文章，好像需要输入密码才能查看呢！
+    
+    </summary>
+    
+    
+      <category term="private" scheme="https://zronghui.github.io/categories/private/"/>
+    
+      <category term="2020" scheme="https://zronghui.github.io/categories/private/2020/"/>
+    
+      <category term="5" scheme="https://zronghui.github.io/categories/private/2020/5/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>weekly-contest-187</title>
@@ -48,9 +173,9 @@
     <link href="https://zronghui.github.io/tricks/tricks-2020-05.html"/>
     <id>https://zronghui.github.io/tricks/tricks-2020-05.html</id>
     <published>2020-05-01T00:08:33.000Z</published>
-    <updated>2020-05-05T01:38:57.000Z</updated>
+    <updated>2020-05-05T12:43:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="网页速度分析及优化"><a href="#网页速度分析及优化" class="headerlink" title="网页速度分析及优化"></a>网页速度分析及优化</h2><p><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2F47.93.53.47%2Fsearch%3Fq%3D%25E4%25BD%2599%25E6%25AC%25A2%25E6%25B0%25B4">PageSpeed Insights</a><br><a href="https://www.17ce.com/">http://47.93.53.47/search?q=%E4%BD%99%E6%AC%A2%E6%B0%B4 GET测试结果 网站速度测试 17CE</a></p><p><a href="https://putong.one/speed-test.html">常用国内外网站测速及性能分析工具 - 普通玩家</a></p><h2 id="快捷键-配置"><a href="#快捷键-配置" class="headerlink" title="快捷键 配置"></a>快捷键 配置</h2><h3 id="配置-Caps-键为-command-control-option-shift"><a href="#配置-Caps-键为-command-control-option-shift" class="headerlink" title="配置 Caps 键为 command+control+option+shift"></a>配置 Caps 键为 command+control+option+shift</h3><p><a href="https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-complex-modifications/">Use more complex rules | Karabiner-Elements</a></p><img src="https://i.loli.net/2020/05/01/jlGkExbi46spwdQ.png" alt="jlGkExbi46spwdQ" style="zoom:50%;" /><img src="https://i.loli.net/2020/05/01/NOulVPBkaCsJEZ6.png" alt="NOulVPBkaCsJEZ6" style="zoom:50%;" /><h3 id="设置服务快捷键"><a href="#设置服务快捷键" class="headerlink" title="设置服务快捷键"></a>设置服务快捷键</h3><p>caps + d: 用 Downie3 下载</p><p>caps + o: 打开 URL</p><p>caps + t: 谷歌翻译</p><img src="https://i.loli.net/2020/05/01/wI26dunWlhQBe3X.png" alt="wI26dunWlhQBe3X" style="zoom:50%;" /><img src="https://i.loli.net/2020/05/01/DfFPZiEAuI175O2.png" alt="DfFPZiEAuI175O2" style="zoom:50%;" /><h3 id="听写"><a href="#听写" class="headerlink" title="听写"></a>听写</h3><img src="https://i.loli.net/2020/05/01/65Q3A2cEuFax8J7.png" alt="65Q3A2cEuFax8J7" style="zoom:50%;" /><h3 id="workona"><a href="#workona" class="headerlink" title="workona"></a>workona</h3><img src="https://i.loli.net/2020/05/01/4mzO1gfbdEnoc5N.png" alt="4mzO1gfbdEnoc5N" style="zoom:50%;" /><p><a href="https://mp.weixin.qq.com/s/hCZWQEfHrCAxTiO0h8ukJw">小悦记</a></p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/84141/1588212597876-e5987568-1032-4756-9548-21f72a9571cc.jpeg" alt="img" style="zoom:50%;" /><p>Chrome 浏览器插件，可以一键导出微信读书笔记。</p><p><a href="https://github.com/syscolabs/kasaya">kasaya</a></p><p>一个命令行的浏览器自动化脚本执行器。</p><p><a href="https://github.com/edraobdu/printy">edraobdu/printy: Printy is lite and cross-platform library that extends the functionalities of the built-in functions print() and input()</a></p><p><a href="https://github.com/bannyvishwas2020/MyhandWriting">bannyvishwas2020/MyHandWriting: Convert text to your own hand writing</a></p><h2 id="使用脚本批量替换文本内容"><a href="#使用脚本批量替换文本内容" class="headerlink" title="使用脚本批量替换文本内容"></a>使用脚本批量替换文本内容</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$1</span> search_keyword</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$2</span> replace_original</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$3</span> replace_destination</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$4</span> search file <span class="built_in">type</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">find ./ -type f -name "*.$4" -exec grep -l "$1" &#123;&#125; \; | xargs sed -i "" -e "s/$2/$3/g"</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">replaceText.sh "FD" "FD" "文件描述符" "markdown"</span><br></pre></td></tr></table></figure><p><a href="https://github.com/crawlab-team/crawlab/blob/master/README-zh.md">crawlab/README-zh.md at master · crawlab-team/crawlab</a><br><a href="http://concurrent.redspider.group/">本书简介 · 深入浅出Java多线程</a><br><a href="https://hollischuang.github.io/toBeTopJavaer/#/menu">Java工程师成神之路</a><br><a href="https://github.com/emeryberger/scalene">emeryberger/scalene: a high-performance, high-precision CPU and memory profiler for Python</a><br><a href="https://github.com/shibing624/pycorrector">shibing624/pycorrector: pycorrector is a toolkit for text error correction. It was developed to facilitate the designing, comparing, and sharing of deep text error correction models.</a></p><p><a href="https://github.com/bansal-io/pattern.css">bansal-io/pattern.css: CSS only library to fill empty background with beautiful patterns.</a><br><a href="https://bansal.io/pattern-css">pattern.css - Background Patterns in CSS</a></p><h2 id="谷歌搜索黑名单"><a href="#谷歌搜索黑名单" class="headerlink" title="谷歌搜索黑名单"></a>谷歌搜索黑名单</h2><p><a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist">cobaltdisco/Google-Chinese-Results-Blocklist: 他妈的我终于能用谷歌搜中文了</a></p><p><a href="https://www.jianshu.com/p/14f0c9dd1b70">[Mac重装系统]升级10.15需格式化为APFS？ - 简书</a></p><p><a href="https://github.com/xufqing/rest_xops">xufqing/rest_xops: Python3 采用vue + drf 的运维自动化系统 （开发中）django rest framework、channels</a></p><p><a href="https://github.com/0voice/from_coder_to_expert">0voice/from_coder_to_expert: 2019年最新总结，从程序员到CTO，从专业走向卓越，分享大牛企业内部pdf与PPT</a></p><p><a href="https://macflow.net/p/1489.html">10 款最佳 Mac 动态壁纸，都为你准备好了！ | MacFlow</a></p><p>已经保存至奶牛</p>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="网页速度分析及优化"><a href="#网页速度分析及优化" class="headerlink" title="网页速度分析及优化"></a>网页速度分析及优化</h2><p><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2F47.93.53.47%2Fsearch%3Fq%3D%25E4%25BD%2599%25E6%25AC%25A2%25E6%25B0%25B4">PageSpeed Insights</a><br><a href="https://www.17ce.com/">http://47.93.53.47/search?q=%E4%BD%99%E6%AC%A2%E6%B0%B4 GET测试结果 网站速度测试 17CE</a></p><p><a href="https://putong.one/speed-test.html">常用国内外网站测速及性能分析工具 - 普通玩家</a></p><h2 id="快捷键-配置"><a href="#快捷键-配置" class="headerlink" title="*快捷键 配置"></a>*快捷键 配置</h2><h3 id="配置-Caps-键为-command-control-option-shift"><a href="#配置-Caps-键为-command-control-option-shift" class="headerlink" title="配置 Caps 键为 command+control+option+shift"></a>配置 Caps 键为 command+control+option+shift</h3><p><a href="https://karabiner-elements.pqrs.org/docs/manual/configuration/configure-complex-modifications/">Use more complex rules | Karabiner-Elements</a></p><img src="https://i.loli.net/2020/05/01/jlGkExbi46spwdQ.png" alt="jlGkExbi46spwdQ" style="zoom:50%;" /><img src="https://i.loli.net/2020/05/01/NOulVPBkaCsJEZ6.png" alt="NOulVPBkaCsJEZ6" style="zoom:50%;" /><h3 id="设置服务快捷键"><a href="#设置服务快捷键" class="headerlink" title="设置服务快捷键"></a>设置服务快捷键</h3><p>caps + d: 用 Downie3 下载</p><p>caps + o: 打开 URL</p><p>caps + t: 谷歌翻译</p><img src="https://i.loli.net/2020/05/01/wI26dunWlhQBe3X.png" alt="wI26dunWlhQBe3X" style="zoom:50%;" /><img src="https://i.loli.net/2020/05/01/DfFPZiEAuI175O2.png" alt="DfFPZiEAuI175O2" style="zoom:50%;" /><h3 id="听写"><a href="#听写" class="headerlink" title="听写"></a>听写</h3><img src="https://i.loli.net/2020/05/01/65Q3A2cEuFax8J7.png" alt="65Q3A2cEuFax8J7" style="zoom:50%;" /><h3 id="workona"><a href="#workona" class="headerlink" title="workona"></a>workona</h3><img src="https://i.loli.net/2020/05/01/4mzO1gfbdEnoc5N.png" alt="4mzO1gfbdEnoc5N" style="zoom:50%;" /><p><a href="https://mp.weixin.qq.com/s/hCZWQEfHrCAxTiO0h8ukJw">小悦记</a></p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/84141/1588212597876-e5987568-1032-4756-9548-21f72a9571cc.jpeg" alt="img" style="zoom:50%;" /><p>Chrome 浏览器插件，可以一键导出微信读书笔记。</p><p><a href="https://github.com/syscolabs/kasaya">kasaya</a></p><p>一个命令行的浏览器自动化脚本执行器。</p><p><a href="https://github.com/edraobdu/printy">edraobdu/printy: Printy is lite and cross-platform library that extends the functionalities of the built-in functions print() and input()</a></p><p><a href="https://github.com/bannyvishwas2020/MyhandWriting">bannyvishwas2020/MyHandWriting: Convert text to your own hand writing</a></p><h2 id="使用脚本批量替换文本内容"><a href="#使用脚本批量替换文本内容" class="headerlink" title="使用脚本批量替换文本内容"></a>使用脚本批量替换文本内容</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$1</span> search_keyword</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$2</span> replace_original</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$3</span> replace_destination</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="variable">$4</span> search file <span class="built_in">type</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">find ./ -type f -name "*.$4" -exec grep -l "$1" &#123;&#125; \; | xargs sed -i "" -e "s/$2/$3/g"</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">replaceText.sh "FD" "FD" "文件描述符" "markdown"</span><br></pre></td></tr></table></figure><p><a href="https://github.com/crawlab-team/crawlab/blob/master/README-zh.md">crawlab/README-zh.md at master · crawlab-team/crawlab</a><br><a href="http://concurrent.redspider.group/">本书简介 · 深入浅出Java多线程</a><br><a href="https://hollischuang.github.io/toBeTopJavaer/#/menu">Java工程师成神之路</a><br><a href="https://github.com/emeryberger/scalene">emeryberger/scalene: a high-performance, high-precision CPU and memory profiler for Python</a><br><a href="https://github.com/shibing624/pycorrector">shibing624/pycorrector: pycorrector is a toolkit for text error correction. It was developed to facilitate the designing, comparing, and sharing of deep text error correction models.</a></p><p><a href="https://github.com/bansal-io/pattern.css">bansal-io/pattern.css: CSS only library to fill empty background with beautiful patterns.</a><br><a href="https://bansal.io/pattern-css">pattern.css - Background Patterns in CSS</a></p><h2 id="谷歌搜索黑名单"><a href="#谷歌搜索黑名单" class="headerlink" title="谷歌搜索黑名单"></a>谷歌搜索黑名单</h2><p><a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist">cobaltdisco/Google-Chinese-Results-Blocklist: 他妈的我终于能用谷歌搜中文了</a></p><p><a href="https://www.jianshu.com/p/14f0c9dd1b70">[Mac重装系统]升级10.15需格式化为APFS？ - 简书</a></p><p><a href="https://github.com/xufqing/rest_xops">xufqing/rest_xops: Python3 采用vue + drf 的运维自动化系统 （开发中）django rest framework、channels</a></p><p><a href="https://github.com/0voice/from_coder_to_expert">0voice/from_coder_to_expert: 2019年最新总结，从程序员到CTO，从专业走向卓越，分享大牛企业内部pdf与PPT</a></p><p><a href="https://macflow.net/p/1489.html">10 款最佳 Mac 动态壁纸，都为你准备好了！ | MacFlow</a></p><p>已经保存至奶牛</p><h2 id="视频网站去水印"><a href="#视频网站去水印" class="headerlink" title="视频网站去水印"></a>视频网站去水印</h2><p><a href="http://beijixs.cn/">北极XS 视频解析</a></p><p><a href="https://www.52pojie.cn/thread-1169884-1-1.html">优酷 爱奇艺 腾讯视频 去水印脚本 - 『精品软件区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a></p><h2 id="局域网文件传输"><a href="#局域网文件传输" class="headerlink" title="局域网文件传输"></a>局域网文件传输</h2><p><a href="https://www.52pojie.cn/thread-1169261-1-1.html">小米互传PC版-智慧互联1.1.0.453 - 『精品软件区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a><br><a href="https://langenius.gitee.io/#tag_android">局域网精灵 - 局域网传文件利器 !</a></p><h3 id="联通米粉卡扫号"><a href="#联通米粉卡扫号" class="headerlink" title="联通米粉卡扫号"></a>联通米粉卡扫号</h3><p>我看好像六安都卖完了。而且相较于校园卡不是特别优惠。只能说适合于找靓号</p><p><a href="https://www.52pojie.cn/thread-1170557-1-1.html">安徽地区联通米粉卡扫号软件 - 『精品软件区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a></p><p>蓝奏：<a href="https://lanzous.com/ic6z46d">https://lanzous.com/ic6z46d</a></p><p>打不开可能是系统默认浏览器原因吧<br>下单链接:<a href="http://mall.10010.com/goodsdetail/301904268051.html">http://mall.10010.com/goodsdetail/301904268051.html</a></p><img src="https://i.loli.net/2020/05/05/JAFUWP7r6k8cioS.jpg" alt="JAFUWP7r6k8cioS" style="zoom: 67%;" /><p><a href="https://i.hyys.me/">花样影视</a></p><h2 id="网站体验优化油猴脚本"><a href="#网站体验优化油猴脚本" class="headerlink" title="*网站体验优化油猴脚本"></a>*网站体验优化油猴脚本</h2><p><strong>丨网页体验ENH丨观影ENH丨CSS#丨</strong></p><p><a href="https://www.52pojie.cn/thread-1169884-1-1.html">优酷 爱奇艺 腾讯视频 去水印脚本 - 『精品软件区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn</a></p><ol><li>去视频水印</li><li>自动填写博客验证码</li><li>点击文本，‘链接文本’变真链接</li><li>自由的选择链接中的文本</li><li>H5视频离开暂停</li></ol><h2 id="将智能手机虚拟成电脑的网络摄像头"><a href="#将智能手机虚拟成电脑的网络摄像头" class="headerlink" title="将智能手机虚拟成电脑的网络摄像头"></a>将智能手机虚拟成电脑的网络摄像头</h2><p><a href="https://www.appinn.com/faxian-05001/">小众软件《发现频道周报》2020年5月第1期 - 小众软件</a></p><p>pc:iVCam</p><p>mac:</p><p><a href="https://meta.appinn.net/t/obs-obs-camera/15782">OBS 和OBS Camera</a></p><p>OBS 全称 <a href="https://www.appinn.com/open-broadcaster-software/">Open Broadcaster Software</a>，是一款开源直播软件，支持Win/macOS/l=Linux。OBS Camera 是一个OBS插件，支持 Win/macOS。</p><p>上面提到那个 iVCam 可以用手机做网络摄像头，这个需求同样可以用 OBS Camera 配合它的 iOS 应用来实现。</p><p><a href="https://github.com/pdown2020/pdown">pdown2020/pdown: 2020</a></p><h2 id="开启本地服务器"><a href="#开启本地服务器" class="headerlink" title="开启本地服务器"></a>开启本地服务器</h2><p><a href="https://meta.appinn.net/t/http/14290">【推荐】一秒变http服务器，轻松传资源 - 发现频道 - 小众软件官方论坛</a><br><a href="https://www.appinn.com/web-server-for-chrome/">Web Server for Chrome - 用 Chrome 充当临时 HTTP 服务器 - 小众软件</a><br><a href="https://rubygems.org/gems/asdf/">asdf | RubyGems.org | Ruby 社区 Gem 托管</a></p><p>Mac 向 安卓传送文件</p><p><a href="https://github.com/deskangel/DaFileShare">deskangel/DaFileShare: A file share app for macos</a></p><p><a href="https://github.com/iSoron/uhabits">iSoron/uhabits: Loop Habit Tracker, a mobile app for creating and maintaining long-term positive habits</a></p><p><a href="https://app.everyday.app/">everyday</a></p>]]></content>
     
     <summary type="html">
     
@@ -395,177 +520,6 @@ Explanation: Because the path 1-&amp;gt;3-&amp;gt;1-&amp;gt;1-&amp;gt;1 minimize
       <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
     
       <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode 200. Number of Islands</title>
-    <link href="https://zronghui.github.io/leetcode/leetcode-2**/leetcode-200-Number-of-Islands.html"/>
-    <id>https://zronghui.github.io/leetcode/leetcode-2**/leetcode-200-Number-of-Islands.html</id>
-    <published>2020-04-17T11:04:26.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/number-of-islands/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/number-of-islands/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given a 2d grid map of <code>&#39;1&#39;</code>s (land) and <code>&#39;0&#39;</code>s (water), count the number of<br>islands. An island is surrounded by water and is formed by connecting adjacent<br>lands horizontally or vertically. You may assume all four edges of the grid<br>are all surrounded by water.</p><p><strong>Example 1:</strong></p><pre><code>Input:11110110101100000000Output:  1</code></pre><p><strong>Example 2:</strong></p><pre><code>Input:11000110000010000011Output: 3</code></pre><p><strong>Tags:</strong> Depth-first Search, Breadth-first Search, Union Find</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeIsland</span><span class="params">(self, grid, i, j, n, m)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> i&lt;<span class="number">0</span> <span class="keyword">or</span> j&lt;<span class="number">0</span> <span class="keyword">or</span> i&gt;=n <span class="keyword">or</span> j&gt;=m <span class="keyword">or</span> grid[i][j]==<span class="string">'0'</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        grid[i][j] = <span class="string">'0'</span></span><br><span class="line">        self.removeIsland(grid, i<span class="number">-1</span>, j, n, m)</span><br><span class="line">        self.removeIsland(grid, i+<span class="number">1</span>, j, n, m)</span><br><span class="line">        self.removeIsland(grid, i, j<span class="number">-1</span>, n, m)</span><br><span class="line">        self.removeIsland(grid, i, j+<span class="number">1</span>, n, m)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">numIslands</span><span class="params">(self, grid: List[List[str]])</span> -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> grid <span class="keyword">or</span> <span class="keyword">not</span> grid[<span class="number">0</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        n, m = len(grid), len(grid[<span class="number">0</span>])</span><br><span class="line">        res = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(m):</span><br><span class="line">                <span class="keyword">if</span> grid[i][j]==<span class="string">'1'</span>:</span><br><span class="line">                    self.removeIsland(grid, i, j, n, m)</span><br><span class="line">                    res += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/number-of-islands/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/number-of-islands/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given a 2d grid map of &lt;code&gt;&amp;#39;1&amp;#39;&lt;/code&gt;s (land) and &lt;code&gt;&amp;#39;0&amp;#39;&lt;/code&gt;s (water), count the number of&lt;br&gt;islands. An island is surrounded by water and is formed by connecting adjacent&lt;br&gt;lands horizontally or vertically. You may assume all four edges of the grid&lt;br&gt;are all surrounded by water.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input:
-11110
-11010
-11000
-00000
-
-Output:  1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input:
-11000
-11000
-00100
-00011
-
-Output: 3&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Depth-first Search, Breadth-first Search, Union Find&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
-&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="leetcode-2**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-2/"/>
-    
-    
-      <category term="Breadth-first Search" scheme="https://zronghui.github.io/tags/Breadth-first-Search/"/>
-    
-      <category term="Depth-first Search" scheme="https://zronghui.github.io/tags/Depth-first-Search/"/>
-    
-      <category term="Union Find" scheme="https://zronghui.github.io/tags/Union-Find/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode 844. Backspace String Compare</title>
-    <link href="https://zronghui.github.io/leetcode/leetcode-8**/leetcode-844-Backspace-String-Compare.html"/>
-    <id>https://zronghui.github.io/leetcode/leetcode-8**/leetcode-844-Backspace-String-Compare.html</id>
-    <published>2020-04-17T09:39:09.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/backspace-string-compare/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/backspace-string-compare/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given two strings <code>S</code> and <code>T</code>, return if they are equal when both are typed<br>into empty text editors. <code>#</code> means a backspace character.</p><p><strong>Example 1:</strong></p><pre><code>Input: S = &quot;ab#c&quot;, T = &quot;ad#c&quot;Output: true**Explanation** : Both S and T become &quot;ac&quot;.</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: S = &quot;ab</code></pre><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://leetcode-cn.com/problems/backspace-string-compare/solution/bi-jiao-han-tui-ge-de-zi-fu-chuan-by-leetcode/">比较含退格的字符串 - 比较含退格的字符串 - 力扣（LeetCode）</a></p><p>虽然第二种看起来厉害点，space O(1), 但是time memory 都不如第一种，不知为何</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    <span class="function">def <span class="title">backspace</span><span class="params">(self, S)</span>:</span></span><br><span class="line"><span class="function">        res </span>= <span class="string">''</span></span><br><span class="line">        <span class="keyword">for</span> i in S:</span><br><span class="line">            <span class="keyword">if</span> i!=<span class="string">'#'</span>:</span><br><span class="line">                res += i</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                res = res[:-<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line">        </span><br><span class="line">    <span class="function">def <span class="title">backspaceCompare1</span><span class="params">(self, S: str, T: str)</span> -&gt; bool:</span></span><br><span class="line"><span class="function">        s </span>= self.backspace(S)</span><br><span class="line">        t = self.backspace(T)</span><br><span class="line">        <span class="keyword">return</span> s==t</span><br><span class="line">    </span><br><span class="line">    <span class="function">def <span class="title">backspaceCompare</span><span class="params">(self, S: str, T: str)</span> -&gt; bool:</span></span><br><span class="line"><span class="function">        def <span class="title">skip</span><span class="params">(S)</span>:</span></span><br><span class="line"><span class="function">            skip </span>= <span class="number">0</span></span><br><span class="line">            <span class="function"><span class="keyword">for</span> i in <span class="title">reversed</span><span class="params">(S)</span>:</span></span><br><span class="line"><span class="function">                <span class="keyword">if</span> i</span>==<span class="string">'#'</span>:</span><br><span class="line">                    skip += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="keyword">if</span> skip:</span><br><span class="line">                        skip -= <span class="number">1</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        yield i</span><br><span class="line">        <span class="keyword">return</span> all(x==y <span class="keyword">for</span> x, y in itertools.zip_longest(skip(S), skip(T)))</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/backspace-string-compare/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/backspace-string-compare/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given two strings &lt;code&gt;S&lt;/code&gt; and &lt;code&gt;T&lt;/code&gt;, return if they are equal when both are typed&lt;br&gt;into empty text editors. &lt;code&gt;#&lt;/code&gt; means a backspace character.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: S = &amp;quot;ab#c&amp;quot;, T = &amp;quot;ad#c&amp;quot;
-Output: true
-**Explanation** : Both S and T become &amp;quot;ac&amp;quot;.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: S = &amp;quot;ab&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="leetcode-8**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-8/"/>
-    
-    
-      <category term="Stack" scheme="https://zronghui.github.io/tags/Stack/"/>
-    
-      <category term="Two Pointers" scheme="https://zronghui.github.io/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode 55. Jump Game</title>
-    <link href="https://zronghui.github.io/leetcode/leetcode-5**/leetcode-55-Jump-Game.html"/>
-    <id>https://zronghui.github.io/leetcode/leetcode-5**/leetcode-55-Jump-Game.html</id>
-    <published>2020-04-17T04:40:04.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/jump-game/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/jump-game/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given an array of non-negative integers, you are initially positioned at the<br>first index of the array.</p><p>Each element in the array represents your maximum jump length at that<br>position.</p><p>Determine if you are able to reach the last index.</p><p><strong>Example 1:</strong></p><pre><code>Input: [2,3,1,1,4]Output: trueExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: [3,2,1,0,4]Output: falseExplanation: You will always arrive at index 3 no matter what. Its maximum             jump length is 0, which makes it impossible to reach the last index.</code></pre><p><strong>Tags:</strong> Array, Greedy</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://leetcode-cn.com/problems/jump-game/solution/tiao-yue-you-xi-by-leetcode-solution/">跳跃游戏 - 跳跃游戏 - 力扣（LeetCode）</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">canJump1</span><span class="params">(self, nums: List[int])</span> -&gt; bool:</span></span><br><span class="line">        <span class="comment"># 12:29-12:34  5min</span></span><br><span class="line">        n = len(nums)</span><br><span class="line">        dp = [<span class="number">0</span>]*n</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n<span class="number">-1</span>):</span><br><span class="line">            <span class="keyword">if</span> dp[i]:</span><br><span class="line">                <span class="comment"># 0-&gt;3 1 2 3</span></span><br><span class="line">                dp[i+<span class="number">1</span>:min(n, i+<span class="number">1</span>+nums[i])] = [<span class="number">1</span>] * nums[i]</span><br><span class="line">                <span class="keyword">if</span> dp[<span class="number">-1</span>]:</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">return</span> bool(dp[<span class="number">-1</span>])</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">canJump</span><span class="params">(self, nums: List[int])</span> -&gt; bool:</span></span><br><span class="line">        <span class="comment"># 贪心</span></span><br><span class="line">        <span class="comment"># 12:37-12:39.5   2.5min</span></span><br><span class="line">        m = <span class="number">0</span></span><br><span class="line">        n = len(nums)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n<span class="number">-1</span>):</span><br><span class="line">            <span class="keyword">if</span> i&gt;m:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            m = max(m, i+nums[i])</span><br><span class="line">            <span class="keyword">if</span> m&gt;=n<span class="number">-1</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">return</span> m&gt;=n<span class="number">-1</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/jump-game/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/jump-game/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given an array of non-negative integers, you are initially positioned at the&lt;br&gt;first index of the array.&lt;/p&gt;
-&lt;p&gt;Each element in the array represents your maximum jump length at that&lt;br&gt;position.&lt;/p&gt;
-&lt;p&gt;Determine if you are able to reach the last index.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: [2,3,1,1,4]
-Output: true
-Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: [3,2,1,0,4]
-Output: false
-Explanation: You will always arrive at index 3 no matter what. Its maximum
-             jump length is 0, which makes it impossible to reach the last index.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Greedy&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
-&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="leetcode-5**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-5/"/>
-    
-    
-      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
-    
-      <category term="Greedy" scheme="https://zronghui.github.io/tags/Greedy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode 72. Edit Distance</title>
-    <link href="https://zronghui.github.io/leetcode/leetcode-7**/leetcode-72-Edit-Distance.html"/>
-    <id>https://zronghui.github.io/leetcode/leetcode-7**/leetcode-72-Edit-Distance.html</id>
-    <published>2020-04-16T14:38:56.000Z</published>
-    <updated>2020-04-25T16:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/edit-distance/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/edit-distance/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given two words <em>word1</em> and <em>word2</em> , find the minimum number of operations<br>required to convert <em>word1</em> to <em>word2</em>.</p><p>You have the following 3 operations permitted on a word:</p><ol><li>Insert a character</li><li>Delete a character</li><li>Replace a character</li></ol><p><strong>Example 1:</strong></p><pre><code>Input: word1 = &quot;horse&quot;, word2 = &quot;ros&quot;Output: 3Explanation: horse -&gt; rorse (replace &apos;h&apos; with &apos;r&apos;)rorse -&gt; rose (remove &apos;r&apos;)rose -&gt; ros (remove &apos;e&apos;)</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: word1 = &quot;intention&quot;, word2 = &quot;execution&quot;Output: 5Explanation: intention -&gt; inention (remove &apos;t&apos;)inention -&gt; enention (replace &apos;i&apos; with &apos;e&apos;)enention -&gt; exention (replace &apos;n&apos; with &apos;x&apos;)exention -&gt; exection (replace &apos;n&apos; with &apos;c&apos;)exection -&gt; execution (insert &apos;u&apos;)</code></pre><p><strong>Tags:</strong> String, Dynamic Programming</p><p><strong>Difficulty:</strong> Hard</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://leetcode-cn.com/problems/edit-distance/solution/xiong-mao-shua-ti-python3-dong-tai-gui-hua-yi-dong/">(2) 【🐼熊猫刷题Python3】用视频讲DP, 一听就懂 - 编辑距离 - 力扣（LeetCode）</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minDistance</span><span class="params">(self, w1: str, w2: str)</span> -&gt; int:</span></span><br><span class="line">        n, m = len(w1), len(w2)</span><br><span class="line">        <span class="keyword">if</span>  min(n, m)==<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> max(n, m)</span><br><span class="line">        dp = [[<span class="number">0</span> <span class="keyword">for</span> _ <span class="keyword">in</span> range(m+<span class="number">1</span>)]<span class="keyword">for</span> _ <span class="keyword">in</span> range(n+<span class="number">1</span>)]</span><br><span class="line">        <span class="comment"># 边界值</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n+<span class="number">1</span>):</span><br><span class="line">            dp[i][<span class="number">0</span>] = i</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(m+<span class="number">1</span>):</span><br><span class="line">            dp[<span class="number">0</span>][j] = j</span><br><span class="line">        <span class="comment"># 状态转移</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, m+<span class="number">1</span>):</span><br><span class="line">                <span class="keyword">if</span> w1[i<span class="number">-1</span>]==w2[j<span class="number">-1</span>]:</span><br><span class="line">                    dp[i][j] = dp[i<span class="number">-1</span>][j<span class="number">-1</span>]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    dp[i][j] = min(dp[i<span class="number">-1</span>][j<span class="number">-1</span>], dp[i<span class="number">-1</span>][j], dp[i][j<span class="number">-1</span>])+<span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">-1</span>][<span class="number">-1</span>]</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/edit-distance/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/edit-distance/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given two words &lt;em&gt;word1&lt;/em&gt; and &lt;em&gt;word2&lt;/em&gt; , find the minimum number of operations&lt;br&gt;required to convert &lt;em&gt;word1&lt;/em&gt; to &lt;em&gt;word2&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;You have the following 3 operations permitted on a word:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Insert a character&lt;/li&gt;
-&lt;li&gt;Delete a character&lt;/li&gt;
-&lt;li&gt;Replace a character&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: word1 = &amp;quot;horse&amp;quot;, word2 = &amp;quot;ros&amp;quot;
-Output: 3
-Explanation: 
-horse -&amp;gt; rorse (replace &amp;apos;h&amp;apos; with &amp;apos;r&amp;apos;)
-rorse -&amp;gt; rose (remove &amp;apos;r&amp;apos;)
-rose -&amp;gt; ros (remove &amp;apos;e&amp;apos;)&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Input: word1 = &amp;quot;intention&amp;quot;, word2 = &amp;quot;execution&amp;quot;
-Output: 5
-Explanation: 
-intention -&amp;gt; inention (remove &amp;apos;t&amp;apos;)
-inention -&amp;gt; enention (replace &amp;apos;i&amp;apos; with &amp;apos;e&amp;apos;)
-enention -&amp;gt; exention (replace &amp;apos;n&amp;apos; with &amp;apos;x&amp;apos;)
-exention -&amp;gt; exection (replace &amp;apos;n&amp;apos; with &amp;apos;c&amp;apos;)
-exection -&amp;gt; execution (insert &amp;apos;u&amp;apos;)&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; String, Dynamic Programming&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Hard&lt;/p&gt;
-&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="leetcode-7**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-7/"/>
-    
-    
-      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
-    
-      <category term="String" scheme="https://zronghui.github.io/tags/String/"/>
     
   </entry>
   
