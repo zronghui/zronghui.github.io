@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-06-30T15:47:45.000Z</updated>
+  <updated>2020-07-04T08:08:09.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,254 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tricks-2020-07</title>
+    <link href="https://zronghui.github.io/tricks/tricks-2020-07.html"/>
+    <id>https://zronghui.github.io/tricks/tricks-2020-07.html</id>
+    <published>2020-07-04T08:01:34.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="不好意思，密码没对哦，在检查检查呢！" data-whm="不好意思，信息无法验证！">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">嗨，请准确无误地输入密码查看哟</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="c4c9a332231d56e4d4e3d499e8959e501074c5a6d94c93914eca3027176a226c">d4ddde657b62ae9d724a3e00dfabc05a45fdaf36a8bc4373ea59463028fb879dd85bdd0ba216a9a3ddb0ba4af683a3234740fdce8265b492f7f7c66e06ca477ca5eefea6853f46f0c4c21eba11069307a68c85baf47613206b7b7fa8342ba3e63b45f5e3027eb5393ad2a79dc1f9c6d3338a513824885d7bebc234bc31ad8ad14d441cf09b4d13cdb86bee7a2ca4835273ddadeb22d8717f48d46eab635fc3a98e8cd6e6c7050184b3de31048bfad0b31a2eeaf658a30f37f94238f9f2675fcd5086dd29c97860e5be6a71235f894f8285d5eebd7fc1d8b7ea340b1bdefa77663d9d5b5e05f0d3b152a90809472fff9b88061e88b37b8780ee01cced06890fe3643ecb30157fa7f07987dfb0c4e125381d2e7acc32c4e547a3dcce00cd3d527f04c793bf57901eb5f24eb78fea0cc88d1d33d351b522aed5ecdf3737a014bc77c4c974821765386560da5988f33343d5dae62d4e719e4e25f6a127318c7e03adc3bb29adfd1d861385cc992080564d48543439f25235b602f09d5083607195a6c974ca71339ceaa7a085c91d2112e2090700a3c191e9b03339b1a7389292d8284035d331d45c770d24a4e9c9a9edab918b8ef456e38b1c868d23c14e5c0dd9c17a2fecdf142f953654e397aa8b8beb06fb53f8b090553643d1f7e728b55d9cd4c10b264ede551be48641483200a48c7a6a384b1eef35448d02aa8693976fa16214911cc995d464bb77b0e55bdfcc845a62bcffa06452384ad8e91b41703eeb65c857ecee0b6fd582e1ac333e1859fd089bc5ebb84994854f05bf78e5bf1bff3cfb416d89af09e9146e789066e77be22cc3503d3a7dfdfa7f548ca54257c029d7592ae04eb02528b6da0bce0e0f3e958a437b045595a96efcb57f011c3a6302495ef564e8eda1826b336207d643d527a312812704cee610d35e19ce78515c072fa1fbf3ab696dd63a0ceba1f54393483fc591abafb2229d8e339676ce504c494233ecd5a99e2056d9110891e9c3a620539631ed752d2020374652dc45682ed9dd47413b5a0443074b635cc85aab96cf452e09be6ba6605df051eb7bc254f6781880631a5d6622076dea203bee10c9365e3b0d050abf4169a37ec661ea89a5a70d435727623a9c706c721a692e682a54797119c736608df045fda8eda328cab38a6e520508be2426152bd2ab49bcac11a71c6135def6ea3ab1562dd2d2e516631de3f2a5daaca79453b1aeb187e8bd7007485e67d25613e9c0b86a0798d84c1a469354f5f298a7793c8bf646b5f23912ee92d1fa4c33c71bcbf5d207e0a4a393989c3d96b58bbe4946e22d815316fafb8600bc5f2651e604b7806e053a26653e3df28e03080cb6215749fe6ba3fa809d1653bff85ccd436f4044e4a905e8947ce31301aeca136595f1a8b4b36bb26122549c62a616e442ec7a066a9e0efab82194cc71e56c78660f55b91f24f56f5b9ae5a532fb66620e4cd717cfd9710d25c816a2d76734241320f852df60e407e948355841947852c361b7e9ccb62e645d3e457fa3ee3a46d2aca6809c5c4294096a386fd8a3be95dba520f3b21fee1326e2c52529af57f900217e6841ea9d2bdd2c6cc18a6cc6be638930692250ae0b256d47c023b8909149eecabfe977df3327a128614052f30ff9d9af7ccd3a051f2a5afe8bccd59d26a74665de2a989a5fd2f8d115be521a335cd2278b4195ff7cca02348d08f655aa2f06f63f7f340ee1cecc6b83f8425bd05c0e6179206f873d5445d392de644659de53d643b31f8370cc41e59b20b08f4aeae121b36a4467c127bfe577948db9d2ea82bb083c0b4343c2c74c7432fd9962ea7ce2c3244dafe240aed6654142087bc21cbc48381a7abe81d433fd4dfe2b353c9ddc9dc91b49d534e8ee7539e9b8eb9335f1533464683fda49709bf77b945bf2ea592fbd29673ec4b577a58ec2207a0e881d80224003f910cfb46748230ba8e4ae01aa2e1a54caca92f6b5a56c87ca1e3b753d3864fdc9c1be1ca463a72c7e38882c6e9590a094d7c77226bacecc42decb39ebcab0aaeaf7570895d3a6a80100baf9cd11693b06e9dcbb1d4f4c0f7d93f5904a03e2446406fea36041c4a5b15b6fc2fa5c979b426ec94ef53610b1a32a275752b3ff32dab764e260e82f52d95c8854e48459f533442155</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      咦，这是一篇加密文章，好像需要输入密码才能查看呢！
+    
+    </summary>
+    
+    
+      <category term="tricks" scheme="https://zronghui.github.io/categories/tricks/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 32. Longest Valid Parentheses</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-3**/leetcode-32-Longest-Valid-Parentheses.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-3**/leetcode-32-Longest-Valid-Parentheses.html</id>
+    <published>2020-07-04T00:36:37.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/longest-valid-parentheses/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/longest-valid-parentheses/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given a string containing just the characters <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>, find the length<br>of the longest valid (well-formed) parentheses substring.</p><p><strong>Example 1:</strong></p><pre><code>Input: &quot;(()&quot;Output: 2Explanation: The longest valid parentheses substring is &quot;()&quot;</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: &quot;)()())&quot;Output: 4Explanation: The longest valid parentheses substring is &quot;()()&quot;</code></pre><p><strong>Tags:</strong> String, Dynamic Programming</p><p><strong>Difficulty:</strong> Hard</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">longestValidParentheses</span><span class="params">(self, s: str)</span> -&gt; int:</span></span><br><span class="line">        <span class="comment"># )()()) </span></span><br><span class="line">        <span class="comment"># [('', -1), (')', 0), ('(', 5), ('', 6)] 5-0-1</span></span><br><span class="line">        l = [(<span class="string">''</span>, <span class="number">-1</span>)]</span><br><span class="line">        <span class="keyword">for</span> i, c <span class="keyword">in</span> enumerate(s):</span><br><span class="line">            <span class="keyword">if</span> c==<span class="string">')'</span> <span class="keyword">and</span> l[<span class="number">-1</span>][<span class="number">0</span>]==<span class="string">'('</span>:</span><br><span class="line">                l.pop()</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                l.append((c, i))</span><br><span class="line">        l.append((<span class="string">''</span>, len(s)))</span><br><span class="line">        res = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i, v <span class="keyword">in</span> enumerate(l[<span class="number">1</span>:], start=<span class="number">1</span>):</span><br><span class="line">            res = max(res, v[<span class="number">1</span>]-l[i<span class="number">-1</span>][<span class="number">1</span>]<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-valid-parentheses/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/longest-valid-parentheses/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given a string containing just the characters &lt;code&gt;&amp;#39;(&amp;#39;&lt;/code&gt; and &lt;code&gt;&amp;#39;)&amp;#39;&lt;/code&gt;, find the length&lt;br&gt;of the longest valid (well-formed) parentheses substring.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: &amp;quot;(()&amp;quot;
+Output: 2
+Explanation: The longest valid parentheses substring is &amp;quot;()&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: &amp;quot;)()())&amp;quot;
+Output: 4
+Explanation: The longest valid parentheses substring is &amp;quot;()()&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; String, Dynamic Programming&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Hard&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-3**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-3/"/>
+    
+    
+      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
+    
+      <category term="String" scheme="https://zronghui.github.io/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 231. Power of Two</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-2**/leetcode-231-Power-of-Two.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-2**/leetcode-231-Power-of-Two.html</id>
+    <published>2020-07-03T11:38:39.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/power-of-two/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/power-of-two/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given an integer, write a function to determine if it is a power of two.</p><p><strong>Example 1:</strong></p><pre><code>Input: 1Output: true Explanation: 20 = 1</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: 16Output: trueExplanation: 24 = 16</code></pre><p><strong>Example 3:</strong></p><pre><code>Input: 218Output: false</code></pre><p><strong>Tags:</strong> Math, Bit Manipulation</p><p><strong>Difficulty:</strong> Easy</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isPowerOfTwo</span><span class="params">(self, n: int)</span> -&gt; bool:</span></span><br><span class="line">        <span class="keyword">if</span> n&lt;=<span class="number">0</span>:pyt</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        cnt = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> n:</span><br><span class="line">            n &amp;= n<span class="number">-1</span></span><br><span class="line">            cnt += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span> <span class="keyword">if</span> cnt==<span class="number">1</span> <span class="keyword">else</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/power-of-two/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/power-of-two/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given an integer, write a function to determine if it is a power of two.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 1
+Output: true 
+Explanation: 20 = 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 16
+Output: true
+Explanation: 24 = 16&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 218
+Output: false&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Math, Bit Manipulation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-2**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-2/"/>
+    
+    
+      <category term="Math" scheme="https://zronghui.github.io/tags/Math/"/>
+    
+      <category term="Bit Manipulation" scheme="https://zronghui.github.io/tags/Bit-Manipulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 153. Find Minimum in Rotated Sorted Array</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-1**/leetcode-153-Find-Minimum-in-Rotated-Sorted-Array.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-1**/leetcode-153-Find-Minimum-in-Rotated-Sorted-Array.html</id>
+    <published>2020-07-02T00:24:31.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/find-minimum-in-rotated-sorted-array/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Suppose an array sorted in ascending order is rotated at some pivot unknown to<br>you beforehand.</p><p>(i.e.,  <code>[0,1,2,4,5,6,7]</code> might become  <code>[4,5,6,7,0,1,2]</code>).</p><p>Find the minimum element.</p><p>You may assume no duplicate exists in the array.</p><p><strong>Example 1:</strong></p><pre><code>Input: [3,4,5,1,2] Output: 1</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: [4,5,6,7,0,1,2]Output: 0</code></pre><p><strong>Tags:</strong> Array, Binary Search</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findMin</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        i, j = <span class="number">0</span>, len(nums)<span class="number">-1</span></span><br><span class="line">        <span class="keyword">while</span> i&lt;j:</span><br><span class="line">            m = i+(j-i)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> nums[m]&gt;nums[j]:</span><br><span class="line">                i = m+<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                j = m</span><br><span class="line">        <span class="keyword">return</span> nums[i]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/find-minimum-in-rotated-sorted-array/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Suppose an array sorted in ascending order is rotated at some pivot unknown to&lt;br&gt;you beforehand.&lt;/p&gt;
+&lt;p&gt;(i.e.,  &lt;code&gt;[0,1,2,4,5,6,7]&lt;/code&gt; might become  &lt;code&gt;[4,5,6,7,0,1,2]&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Find the minimum element.&lt;/p&gt;
+&lt;p&gt;You may assume no duplicate exists in the array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [3,4,5,1,2] 
+Output: 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [4,5,6,7,0,1,2]
+Output: 0&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Binary Search&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-1**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-1/"/>
+    
+    
+      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
+    
+      <category term="Binary Search" scheme="https://zronghui.github.io/tags/Binary-Search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 154. Find Minimum in Rotated Sorted Array II</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-1**/leetcode-154-Find-Minimum-in-Rotated-Sorted-Array-II.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-1**/leetcode-154-Find-Minimum-in-Rotated-Sorted-Array-II.html</id>
+    <published>2020-07-02T00:24:16.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/find-minimum-in-rotated-sorted-array-ii/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Suppose an array sorted in ascending order is rotated at some pivot unknown to<br>you beforehand.</p><p>(i.e.,  <code>[0,1,2,4,5,6,7]</code> might become  <code>[4,5,6,7,0,1,2]</code>).</p><p>Find the minimum element.</p><p>The array may contain duplicates.</p><p><strong>Example 1:</strong></p><pre><code>Input: [1,3,5]Output: 1</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: [2,2,2,0,1]Output: 0</code></pre><p><strong>Note:</strong></p><ul><li>This is a follow up problem to <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/">Find Minimum in Rotated Sorted Array</a>.</li><li>Would allow duplicates affect the run-time complexity? How and why?</li></ul><p><strong>Tags:</strong> Array, Binary Search</p><p><strong>Difficulty:</strong> Hard</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minArray</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        i, j = <span class="number">0</span>, len(nums)<span class="number">-1</span></span><br><span class="line">        <span class="keyword">while</span> i&lt;j:</span><br><span class="line">            m = i+(j-i)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> nums[m]&gt;nums[j]:</span><br><span class="line">                i = m+<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> nums[m]&lt;nums[j]:</span><br><span class="line">                j = m</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                j -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> nums[i]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/find-minimum-in-rotated-sorted-array-ii/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Suppose an array sorted in ascending order is rotated at some pivot unknown to&lt;br&gt;you beforehand.&lt;/p&gt;
+&lt;p&gt;(i.e.,  &lt;code&gt;[0,1,2,4,5,6,7]&lt;/code&gt; might become  &lt;code&gt;[4,5,6,7,0,1,2]&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Find the minimum element.&lt;/p&gt;
+&lt;p&gt;The array may contain duplicates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [1,3,5]
+Output: 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [2,2,2,0,1]
+Output: 0&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a follow up problem to &lt;a href=&quot;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/&quot;&gt;Find Minimum in Rotated Sorted Array&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Would allow duplicates affect the run-time complexity? How and why?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Binary Search&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Hard&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-1**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-1/"/>
+    
+    
+      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
+    
+      <category term="Binary Search" scheme="https://zronghui.github.io/tags/Binary-Search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指 Offer 00 题解</title>
+    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-00-%E9%A2%98%E8%A7%A3.html"/>
+    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-00-%E9%A2%98%E8%A7%A3.html</id>
+    <published>2020-07-01T03:27:28.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><p><a href="https://krahets.gitee.io/views/sword-for-offer/2020-05-20-sword-for-offer-00.html">「 剑指 OFFER 系列题解 」 扬帆，起航 | Krahets’s Blog</a></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://krahets.gitee.io/views/sword-for-offer/2020-05-20-sword-for-offer-00.html&quot;&gt;「 剑指 OFFER 系列题解 」 扬帆，起航 | Krahets’s Blog&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 718. Maximum Length of Repeated Subarray</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-7**/leetcode-718-Maximum-Length-of-Repeated-Subarray.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-7**/leetcode-718-Maximum-Length-of-Repeated-Subarray.html</id>
+    <published>2020-07-01T01:33:32.000Z</published>
+    <updated>2020-07-04T08:08:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/maximum-length-of-repeated-subarray/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/maximum-length-of-repeated-subarray/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given two integer arrays <code>A</code> and <code>B</code>, return the maximum length of an subarray<br>that appears in both arrays.</p><p><strong>Example 1:</strong></p><pre><code>Input:A: [1,2,3,2,1]B: [3,2,1,4,7]Output: 3Explanation: The repeated subarray with maximum length is [3, 2, 1].</code></pre><p><strong>Note:</strong></p><ol><li>1 &lt;= len(A), len(B) &lt;= 1000</li><li>0 &lt;= A[i], B[i] &lt; 100</li></ol><p><strong>Tags:</strong> Array, Hash Table, Binary Search, Dynamic Programming</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://mp.weixin.qq.com/s/XJyujBI5nofVE9CUbStemA">370，最长公共子串和子序列</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findLength</span><span class="params">(self, A: List[int], B: List[int])</span> -&gt; int:</span></span><br><span class="line">        n, m = len(A), len(B)</span><br><span class="line">        res = <span class="number">0</span></span><br><span class="line">        dp = [[<span class="number">0</span>]*(m+<span class="number">1</span>) <span class="keyword">for</span> _ <span class="keyword">in</span> range(n+<span class="number">1</span>)]</span><br><span class="line">        <span class="comment"># n = 3 m=5 A:[3, 2, 1]  B:[4, 7, 3, 2, 1]</span></span><br><span class="line">        <span class="comment">#   [1, 7, 3, 2, 1]</span></span><br><span class="line">        <span class="comment"># 3: 0  0  1  0  0</span></span><br><span class="line">        <span class="comment"># 2: 0  0  0  2  0</span></span><br><span class="line">        <span class="comment"># 1: 1  0  0  0  3</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, m+<span class="number">1</span>):</span><br><span class="line">                <span class="keyword">if</span> A[i<span class="number">-1</span>]==B[j<span class="number">-1</span>]:</span><br><span class="line">                    dp[i][j] = dp[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span></span><br><span class="line">                    res = max(res, dp[i][j])</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    dp[i][j] = <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findLength</span><span class="params">(self, A: List[int], B: List[int])</span> -&gt; int:</span></span><br><span class="line">        n, m = len(A), len(B)</span><br><span class="line">        res = <span class="number">0</span></span><br><span class="line">        dp = [<span class="number">0</span>]*(m+<span class="number">1</span>)</span><br><span class="line">        <span class="comment"># n = 3 m=5 A:[3, 2, 1]  B:[4, 7, 3, 2, 1]</span></span><br><span class="line">        <span class="comment">#   [1, 7, 3, 2, 1]</span></span><br><span class="line">        <span class="comment"># 3: 0  0  1  0  0</span></span><br><span class="line">        <span class="comment"># 2: 0  0  0  2  0</span></span><br><span class="line">        <span class="comment"># 1: 1  0  0  0  3</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> reversed(range(<span class="number">1</span>, m+<span class="number">1</span>)):</span><br><span class="line">                <span class="keyword">if</span> A[i<span class="number">-1</span>]==B[j<span class="number">-1</span>]:</span><br><span class="line">                    dp[j] = dp[j<span class="number">-1</span>]+<span class="number">1</span></span><br><span class="line">                    res = max(res, dp[j])</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    dp[j] = <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-length-of-repeated-subarray/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/maximum-length-of-repeated-subarray/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given two integer arrays &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;, return the maximum length of an subarray&lt;br&gt;that appears in both arrays.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input:
+A: [1,2,3,2,1]
+B: [3,2,1,4,7]
+Output: 3
+Explanation: 
+The repeated subarray with maximum length is [3, 2, 1].&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 &amp;lt;= len(A), len(B) &amp;lt;= 1000&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= A[i], B[i] &amp;lt; 100&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Hash Table, Binary Search, Dynamic Programming&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-7**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-7/"/>
+    
+    
+      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
+    
+      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
+    
+      <category term="Binary Search" scheme="https://zronghui.github.io/tags/Binary-Search/"/>
+    
+      <category term="Hash Table" scheme="https://zronghui.github.io/tags/Hash-Table/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指 Offer 68 - II 二叉树的最近公共祖先</title>
@@ -297,167 +545,6 @@
     <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-58-II-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html"/>
     <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-58-II-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2.html</id>
     <published>2020-06-30T13:56:27.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 58 - I 翻转单词顺序</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-58-I-%E7%BF%BB%E8%BD%AC%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-58-I-%E7%BF%BB%E8%BD%AC%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F.html</id>
-    <published>2020-06-30T13:56:26.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 57 - II 和为s的连续正数序列</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-57-II-%E5%92%8C%E4%B8%BAs%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-57-II-%E5%92%8C%E4%B8%BAs%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97.html</id>
-    <published>2020-06-30T13:56:24.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 57 和为s的两个数字</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-57-%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-57-%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.html</id>
-    <published>2020-06-30T13:56:22.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 56 - II 数组中数字出现的次数 II</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-56-II-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0-II.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-56-II-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0-II.html</id>
-    <published>2020-06-30T13:56:20.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 56 - I 数组中数字出现的次数</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-56-I-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-56-I-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0.html</id>
-    <published>2020-06-30T13:56:18.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 55 - II 平衡二叉树</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-55-II-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-55-II-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html</id>
-    <published>2020-06-30T13:56:16.000Z</published>
-    <updated>2020-06-30T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="剑指offer" scheme="https://zronghui.github.io/categories/leetcode/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 55 - I 二叉树的深度</title>
-    <link href="https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-55-I-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6.html"/>
-    <id>https://zronghui.github.io/leetcode/%E5%89%91%E6%8C%87offer/%E5%89%91%E6%8C%87-Offer-55-I-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6.html</id>
-    <published>2020-06-30T13:56:14.000Z</published>
     <updated>2020-06-30T15:47:45.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a>]]></content>
