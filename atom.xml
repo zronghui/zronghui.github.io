@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-07-08T02:18:06.000Z</updated>
+  <updated>2020-07-10T01:35:26.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>weekly-contest-196</title>
+    <link href="https://zronghui.github.io/weekly-contest-196.html"/>
+    <id>https://zronghui.github.io/weekly-contest-196.html</id>
+    <published>2020-07-08T12:29:59.000Z</published>
+    <updated>2020-07-10T01:35:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><p>又是怀疑人生的一次比赛</p><a id="more"></a><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">canMakeArithmeticProgression</span><span class="params">(self, arr: List[int])</span> -&gt; bool:</span></span><br><span class="line">        n = len(arr)</span><br><span class="line">        <span class="keyword">if</span> n==<span class="number">2</span>: <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        arr.sort()</span><br><span class="line">        gap = arr[<span class="number">1</span>]-arr[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">return</span> all(arr[i]-arr[i<span class="number">-1</span>]==gap <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n))</span><br></pre></td></tr></table></figure><h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="4"><a href="#4" class="headerlink" title="4"></a>4</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;又是怀疑人生的一次比赛&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 53. Maximum Subarray</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-5**/leetcode-53-Maximum-Subarray.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-5**/leetcode-53-Maximum-Subarray.html</id>
+    <published>2020-07-08T12:26:47.000Z</published>
+    <updated>2020-07-10T01:35:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/maximum-subarray/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/maximum-subarray/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given an integer array <code>nums</code>, find the contiguous subarray (containing at<br>least one number) which has the largest sum and return its sum.</p><p><strong>Example:</strong></p><pre><code>Input: [-2,1,-3,4,-1,2,1,-5,4],Output: 6Explanation:  [4,-1,2,1] has the largest sum = 6.</code></pre><p><strong>Follow up:</strong></p><p>If you have figured out the O( <em>n</em> ) solution, try coding another solution<br>using the divide and conquer approach, which is more subtle.</p><p><strong>Tags:</strong> Array, Divide and Conquer, Dynamic Programming</p><p><strong>Difficulty:</strong> Easy</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode id=53 lang=java</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [53] Maximum Subarray</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// 动态规划</span></span><br><span class="line"><span class="comment">// 长度从0~nums.length</span></span><br><span class="line"><span class="comment">// solution(0~i) = max(solution(i-1)+nums[i],nums[i])</span></span><br><span class="line"><span class="comment">// solution = max(solutions)</span></span><br><span class="line"><span class="comment">// 下面用dp(dynamic programming) 表示 solution</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxSubArray</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> dp = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> maxdp = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            dp = Math.max(dp+nums[i], nums[i]);</span><br><span class="line">            maxdp = Math.max(dp, maxdp);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxdp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">maxSubArray</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        <span class="comment"># -2 1 -3 4 -1 2 1 -5 4  nums</span></span><br><span class="line">        <span class="comment"># -2 1 -2 4  3 5 6  1 5  dp(表示以 i 结尾的最大和)</span></span><br><span class="line">        <span class="comment"># if dp[i-1] &lt;= 0: dp[i] = nums[i]</span></span><br><span class="line">        <span class="comment"># else: dp[i] = dp[i-1]+nums[i]</span></span><br><span class="line">        <span class="comment"># 可以看到若要返回那个数组，范围是 [maxdp 前第一个非负的 dp : maxdp]</span></span><br><span class="line">        dp = maxdp = nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">for</span> num <span class="keyword">in</span> nums[<span class="number">1</span>:]:</span><br><span class="line">            <span class="keyword">if</span> dp&lt;=<span class="number">0</span>: dp = num</span><br><span class="line">            <span class="keyword">else</span>: dp += num</span><br><span class="line">            maxdp = max(maxdp, dp)</span><br><span class="line">        <span class="keyword">return</span> maxdp</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-subarray/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/maximum-subarray/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, find the contiguous subarray (containing at&lt;br&gt;least one number) which has the largest sum and return its sum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [-2,1,-3,4,-1,2,1,-5,4],
+Output: 6
+Explanation:  [4,-1,2,1] has the largest sum = 6.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Follow up:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you have figured out the O( &lt;em&gt;n&lt;/em&gt; ) solution, try coding another solution&lt;br&gt;using the divide and conquer approach, which is more subtle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Divide and Conquer, Dynamic Programming&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-5**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-5/"/>
+    
+    
+      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
+    
+      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
+    
+      <category term="Divide and Conquer" scheme="https://zronghui.github.io/tags/Divide-and-Conquer/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 企业题库</title>
@@ -410,52 +468,6 @@
     <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-10-%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.html"/>
     <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-10-%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.html</id>
     <published>2020-07-08T01:43:11.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.09 第 k 个数</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-09-%E7%AC%AC-k-%E4%B8%AA%E6%95%B0.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-09-%E7%AC%AC-k-%E4%B8%AA%E6%95%B0.html</id>
-    <published>2020-07-08T01:43:09.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.08 马戏团人塔</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-08-%E9%A9%AC%E6%88%8F%E5%9B%A2%E4%BA%BA%E5%A1%94.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-08-%E9%A9%AC%E6%88%8F%E5%9B%A2%E4%BA%BA%E5%A1%94.html</id>
-    <published>2020-07-08T01:43:08.000Z</published>
     <updated>2020-07-08T02:18:06.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
