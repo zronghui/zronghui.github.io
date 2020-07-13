@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-07-12T16:00:40.000Z</updated>
+  <updated>2020-07-13T14:36:10.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,115 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 264. Ugly Number II</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-2**/leetcode-264-Ugly-Number-II.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-2**/leetcode-264-Ugly-Number-II.html</id>
+    <published>2020-07-13T14:30:50.000Z</published>
+    <updated>2020-07-13T14:36:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/ugly-number-ii/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/ugly-number-ii/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Write a program to find the <code>n</code>-th ugly number.</p><p>Ugly numbers are <strong>positive numbers</strong> whose prime factors only include <code>2, 3,5</code>.</p><p><strong>Example:</strong></p><pre><code>Input: n = 10Output: 12Explanation:1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers.</code></pre><p><strong>Note:</strong>  </p><ol><li><code>1</code> is typically treated as an ugly number.</li><li><code>n</code> <strong>does not exceed 1690</strong>.</li></ol><p><strong>Tags:</strong> Math, Dynamic Programming, Heap</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://leetcode-cn.com/problems/ugly-number-ii/solution/chou-shu-ii-by-leetcode/">丑数 II - 丑数 II - 力扣（LeetCode）</a><br><a href="https://leetcode-cn.com/problems/chou-shu-lcof/solution/mian-shi-ti-49-chou-shu-dong-tai-gui-hua-qing-xi-t/">面试题49. 丑数（动态规划，清晰图解） - 丑数 - 力扣（LeetCode）</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ugly</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.nums = [<span class="number">1</span>]</span><br><span class="line">        a = b = c = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">1690</span>):</span><br><span class="line">            n2, n3, n5 = self.nums[a]*<span class="number">2</span>, self.nums[b]*<span class="number">3</span>, self.nums[c]*<span class="number">5</span></span><br><span class="line">            m = min(n2, n3, n5)</span><br><span class="line">            self.nums.append(m)</span><br><span class="line">            <span class="keyword">if</span> m==n2: a += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> m==n3: b += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> m==n5: c += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    u = Ugly()</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">nthUglyNumber</span><span class="params">(self, n: int)</span> -&gt; int:</span></span><br><span class="line">        <span class="keyword">return</span> self.u.nums[n<span class="number">-1</span>]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/ugly-number-ii/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/ugly-number-ii/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Write a program to find the &lt;code&gt;n&lt;/code&gt;-th ugly number.&lt;/p&gt;
+&lt;p&gt;Ugly numbers are &lt;strong&gt;positive numbers&lt;/strong&gt; whose prime factors only include &lt;code&gt;2, 3,
+5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: n = 10
+Output: 12
+Explanation:1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;1&lt;/code&gt; is typically treated as an ugly number.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; &lt;strong&gt;does not exceed 1690&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Math, Dynamic Programming, Heap&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-2**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-2/"/>
+    
+    
+      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
+    
+      <category term="Math" scheme="https://zronghui.github.io/tags/Math/"/>
+    
+      <category term="Heap" scheme="https://zronghui.github.io/tags/Heap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 263. Ugly Number</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-2**/leetcode-263-Ugly-Number.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-2**/leetcode-263-Ugly-Number.html</id>
+    <published>2020-07-13T13:45:45.000Z</published>
+    <updated>2020-07-13T14:36:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/ugly-number/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/ugly-number/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Write a program to check whether a given number is an ugly number.</p><p>Ugly numbers are <strong>positive numbers</strong> whose prime factors only include <code>2, 3,5</code>.</p><p><strong>Example 1:</strong></p><pre><code>Input: 6Output: trueExplanation: 6 = 2 × 3</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: 8Output: trueExplanation: 8 = 2 × 2 × 2</code></pre><p><strong>Example 3:</strong></p><pre><code>Input: 14Output: false Explanation:14 is not ugly since it includes another prime factor 7.</code></pre><p><strong>Note:</strong></p><ol><li><code>1</code> is typically treated as an ugly number.</li><li>Input is within the 32-bit signed integer range: [−231,  231 − 1].</li></ol><p><strong>Tags:</strong> Math</p><p><strong>Difficulty:</strong> Easy</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isUgly</span><span class="params">(self, n: int)</span> -&gt; bool:</span></span><br><span class="line">        <span class="keyword">if</span> n&lt;=<span class="number">0</span>: <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">not</span> n%<span class="number">5</span>: n = n//<span class="number">5</span></span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">not</span> n%<span class="number">3</span>: n = n//<span class="number">3</span></span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">not</span> n%<span class="number">2</span>: n = n//<span class="number">2</span></span><br><span class="line">        <span class="keyword">return</span> n==<span class="number">1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/ugly-number/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/ugly-number/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Write a program to check whether a given number is an ugly number.&lt;/p&gt;
+&lt;p&gt;Ugly numbers are &lt;strong&gt;positive numbers&lt;/strong&gt; whose prime factors only include &lt;code&gt;2, 3,
+5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 6
+Output: true
+Explanation: 6 = 2 × 3&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 8
+Output: true
+Explanation: 8 = 2 × 2 × 2&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 14
+Output: false 
+Explanation:14 is not ugly since it includes another prime factor 7.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;1&lt;/code&gt; is typically treated as an ugly number.&lt;/li&gt;
+&lt;li&gt;Input is within the 32-bit signed integer range: [−231,  231 − 1].&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Math&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-2**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-2/"/>
+    
+    
+      <category term="Math" scheme="https://zronghui.github.io/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode模板</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode%E6%A8%A1%E6%9D%BF.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode%E6%A8%A1%E6%9D%BF.html</id>
+    <published>2020-07-13T01:33:11.000Z</published>
+    <updated>2020-07-13T14:36:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h2 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h2><p>helper 函数</p><p>l&lt;=r  l=mid+1 r=mid-1 </p><p>根据求左边界还是右边界，l r 的更新不同</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">search</span><span class="params">(self, nums: List[int], target: int)</span> -&gt; int:</span></span><br><span class="line">        <span class="comment"># return bisect.bisect(nums, target)-bisect.bisect(nums, target-1)</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">helper</span><span class="params">(n)</span>:</span></span><br><span class="line">            l, r = <span class="number">0</span>, len(nums)<span class="number">-1</span></span><br><span class="line">            <span class="keyword">while</span> l&lt;=r:</span><br><span class="line">                mid = (l+r)//<span class="number">2</span></span><br><span class="line">                <span class="keyword">if</span> nums[mid]&lt;=n: l = mid+<span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>: r = mid<span class="number">-1</span></span><br><span class="line">            <span class="keyword">return</span> l</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> helper(target)-helper(target<span class="number">-1</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[TOC]&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>weekly-contest-197</title>
@@ -409,75 +518,6 @@ Explanation:  [4,-1,2,1] has the largest sum = 6.&lt;/code&gt;&lt;/pre&gt;&lt;p&
     <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-15-%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.html"/>
     <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-15-%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.html</id>
     <published>2020-07-08T01:43:20.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.14 最小K个数</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-14-%E6%9C%80%E5%B0%8FK%E4%B8%AA%E6%95%B0.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-14-%E6%9C%80%E5%B0%8FK%E4%B8%AA%E6%95%B0.html</id>
-    <published>2020-07-08T01:43:19.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.13 恢复空格</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-13-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-13-%E6%81%A2%E5%A4%8D%E7%A9%BA%E6%A0%BC.html</id>
-    <published>2020-07-08T01:43:17.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.12 BiNode</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-12-BiNode.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-12-BiNode.html</id>
-    <published>2020-07-08T01:43:15.000Z</published>
     <updated>2020-07-08T02:18:06.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
