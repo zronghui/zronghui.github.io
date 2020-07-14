@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zronghui.github.io/"/>
-  <updated>2020-07-13T14:36:10.000Z</updated>
+  <updated>2020-07-14T03:15:54.000Z</updated>
   <id>https://zronghui.github.io/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode 120. Triangle</title>
+    <link href="https://zronghui.github.io/leetcode-120-Triangle.html"/>
+    <id>https://zronghui.github.io/leetcode-120-Triangle.html</id>
+    <published>2020-07-14T00:04:19.000Z</published>
+    <updated>2020-07-14T03:15:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/triangle/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/triangle/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Given a triangle, find the minimum path sum from top to bottom. Each step you<br>may move to adjacent numbers on the row below.</p><p>For example, given the following triangle</p><pre><code>[     [ **2** ],    [ **3** ,4],   [6, **5** ,7],  [4, **1** ,8,3]]</code></pre><p>The minimum path sum from top to bottom is <code>11</code> (i.e., <strong>2</strong> + <strong>3</strong> + <strong>5</strong><br>+ <strong>1</strong> = 11).</p><p><strong>Note:</strong></p><p>Bonus point if you are able to do this using only <em>O</em> ( <em>n</em> ) extra space,<br>where <em>n</em> is the total number of rows in the triangle.</p><p><strong>Tags:</strong> Array, Dynamic Programming</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p><a href="https://leetcode-cn.com/problems/triangle/solution/zi-di-xiang-shang-dong-tai-gui-hua-lei-si-yu-cong-/">自底向上动态规划，类似于从起点到目的地之间的最短路径 - 三角形最小路径和 - 力扣（LeetCode）</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">minimumTotal</span><span class="params">(self, triangle: List[List[int]])</span> -&gt; int:</span></span><br><span class="line">        <span class="keyword">if</span> len(triangle)==<span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> triangle[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> reversed(range(len(triangle)<span class="number">-1</span>)):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(len(triangle[i])):</span><br><span class="line">                triangle[i][j] += min(triangle[i+<span class="number">1</span>][j:j+<span class="number">2</span>])</span><br><span class="line">        <span class="keyword">return</span> triangle[<span class="number">0</span>][<span class="number">0</span>]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/triangle/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/triangle/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;Given a triangle, find the minimum path sum from top to bottom. Each step you&lt;br&gt;may move to adjacent numbers on the row below.&lt;/p&gt;
+&lt;p&gt;For example, given the following triangle&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+     [ **2** ],
+    [ **3** ,4],
+   [6, **5** ,7],
+  [4, **1** ,8,3]
+]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The minimum path sum from top to bottom is &lt;code&gt;11&lt;/code&gt; (i.e., &lt;strong&gt;2&lt;/strong&gt; + &lt;strong&gt;3&lt;/strong&gt; + &lt;strong&gt;5&lt;/strong&gt;&lt;br&gt;+ &lt;strong&gt;1&lt;/strong&gt; = 11).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bonus point if you are able to do this using only &lt;em&gt;O&lt;/em&gt; ( &lt;em&gt;n&lt;/em&gt; ) extra space,&lt;br&gt;where &lt;em&gt;n&lt;/em&gt; is the total number of rows in the triangle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Array, Dynamic Programming&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Array" scheme="https://zronghui.github.io/tags/Array/"/>
+    
+      <category term="Dynamic Programming" scheme="https://zronghui.github.io/tags/Dynamic-Programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode 1041. Robot Bounded In Circle</title>
+    <link href="https://zronghui.github.io/leetcode/leetcode-1**/leetcode-1041-Robot-Bounded-In-Circle.html"/>
+    <id>https://zronghui.github.io/leetcode/leetcode-1**/leetcode-1041-Robot-Bounded-In-Circle.html</id>
+    <published>2020-07-13T23:34:57.000Z</published>
+    <updated>2020-07-14T03:15:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://leetcode.com/problems/robot-bounded-in-circle/">leetcode</a><br><a href="https://www.jiuzhang.com/solution/robot-bounded-in-circle/">九章</a></p><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>On an infinite plane, a robot initially stands at <code>(0, 0)</code> and faces north.<br>The robot can receive one of three instructions:</p><ul><li><code>&quot;G&quot;</code>: go straight 1 unit;</li><li><code>&quot;L&quot;</code>: turn 90 degrees to the left;</li><li><code>&quot;R&quot;</code>: turn 90 degress to the right.</li></ul><p>The robot performs the <code>instructions</code> given in order, and repeats them<br>forever.</p><p>Return <code>true</code> if and only if there exists a circle in the plane such that the<br>robot never leaves the circle.</p><p><strong>Example 1:</strong><br>            Input: “GGLLGG”    Output: true    Explanation:    The robot moves from (0,0) to (0,2), turns 180 degrees, and then returns to (0,0).    When repeating these instructions, the robot remains in the circle of radius 2 centered at the origin.    </p><p><strong>Example 2:</strong><br>            Input: “GG”    Output: false    Explanation:    The robot moves north indefinitely.    </p><p><strong>Example 3:</strong><br>            Input: “GL”    Output: true    Explanation:    The robot moves from (0, 0) -&gt; (0, 1) -&gt; (-1, 1) -&gt; (-1, 0) -&gt; (0, 0) -&gt; …    </p><p><strong>Note:</strong></p><ol><li><code>1 &lt;= instructions.length &lt;= 100</code></li><li><code>instructions[i]</code> is in <code>{&#39;G&#39;, &#39;L&#39;, &#39;R&#39;}</code></li></ol><p><strong>Tags:</strong> Math</p><p><strong>Difficulty:</strong> Medium</p><h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p><a id="more"></a></p><p>只要走完一轮后，方向改变，即不是直走的话，最后无论再走多少轮总有一轮会走回终点</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isRobotBounded</span><span class="params">(self, instructions: str)</span> -&gt; bool:</span></span><br><span class="line">        x = y = <span class="number">0</span></span><br><span class="line">        directions = [</span><br><span class="line">            (<span class="number">0</span>, <span class="number">1</span>), <span class="comment"># 上北</span></span><br><span class="line">            (<span class="number">1</span>, <span class="number">0</span>), <span class="comment"># 右东</span></span><br><span class="line">            (<span class="number">0</span>, <span class="number">-1</span>), <span class="comment"># 下南</span></span><br><span class="line">            (<span class="number">-1</span>, <span class="number">0</span>), <span class="comment"># 左西</span></span><br><span class="line">        ]</span><br><span class="line">        di = <span class="number">0</span> <span class="comment"># 开始朝北，若 R，+1 %4</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> instructions:</span><br><span class="line">            <span class="keyword">if</span> i==<span class="string">'R'</span>: di = (di+<span class="number">1</span>)%<span class="number">4</span></span><br><span class="line">            <span class="keyword">elif</span> i==<span class="string">'L'</span>: di = (di<span class="number">-1</span>)%<span class="number">4</span></span><br><span class="line">            <span class="keyword">elif</span> i==<span class="string">'G'</span>: </span><br><span class="line">                x += directions[di][<span class="number">0</span>]</span><br><span class="line">                y += directions[di][<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">return</span> x==y==<span class="number">0</span> <span class="keyword">or</span> di!=<span class="number">0</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/robot-bounded-in-circle/&quot;&gt;leetcode&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.jiuzhang.com/solution/robot-bounded-in-circle/&quot;&gt;九章&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;On an infinite plane, a robot initially stands at &lt;code&gt;(0, 0)&lt;/code&gt; and faces north.&lt;br&gt;The robot can receive one of three instructions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;G&amp;quot;&lt;/code&gt;: go straight 1 unit;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;L&amp;quot;&lt;/code&gt;: turn 90 degrees to the left;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;R&amp;quot;&lt;/code&gt;: turn 90 degress to the right.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The robot performs the &lt;code&gt;instructions&lt;/code&gt; given in order, and repeats them&lt;br&gt;forever.&lt;/p&gt;
+&lt;p&gt;Return &lt;code&gt;true&lt;/code&gt; if and only if there exists a circle in the plane such that the&lt;br&gt;robot never leaves the circle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;br&gt;            Input: “GGLLGG”    Output: true    Explanation:    The robot moves from (0,0) to (0,2), turns 180 degrees, and then returns to (0,0).    When repeating these instructions, the robot remains in the circle of radius 2 centered at the origin.    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;br&gt;            Input: “GG”    Output: false    Explanation:    The robot moves north indefinitely.    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;br&gt;            Input: “GL”    Output: true    Explanation:    The robot moves from (0, 0) -&amp;gt; (0, 1) -&amp;gt; (-1, 1) -&amp;gt; (-1, 0) -&amp;gt; (0, 0) -&amp;gt; …    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= instructions.length &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;instructions[i]&lt;/code&gt; is in &lt;code&gt;{&amp;#39;G&amp;#39;, &amp;#39;L&amp;#39;, &amp;#39;R&amp;#39;}&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; Math&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Medium&lt;/p&gt;
+&lt;h2 id=&quot;答案&quot;&gt;&lt;a href=&quot;#答案&quot; class=&quot;headerlink&quot; title=&quot;答案&quot;&gt;&lt;/a&gt;答案&lt;/h2&gt;&lt;p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
+    
+      <category term="leetcode-1**" scheme="https://zronghui.github.io/categories/leetcode/leetcode-1/"/>
+    
+    
+      <category term="Math" scheme="https://zronghui.github.io/tags/Math/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode 264. Ugly Number II</title>
@@ -472,52 +552,6 @@ Explanation:  [4,-1,2,1] has the largest sum = 6.&lt;/code&gt;&lt;/pre&gt;&lt;p&
     <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-17-%E5%A4%9A%E6%AC%A1%E6%90%9C%E7%B4%A2.html"/>
     <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-17-%E5%A4%9A%E6%AC%A1%E6%90%9C%E7%B4%A2.html</id>
     <published>2020-07-08T01:43:24.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.16 按摩师</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-16-%E6%8C%89%E6%91%A9%E5%B8%88.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-16-%E6%8C%89%E6%91%A9%E5%B8%88.html</id>
-    <published>2020-07-08T01:43:22.000Z</published>
-    <updated>2020-07-08T02:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;[TOC]&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="https://zronghui.github.io/categories/leetcode/"/>
-    
-      <category term="程序员面试金典" scheme="https://zronghui.github.io/categories/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试题 17.15 最长单词</title>
-    <link href="https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-15-%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.html"/>
-    <id>https://zronghui.github.io/leetcode/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E9%87%91%E5%85%B8/%E9%9D%A2%E8%AF%95%E9%A2%98-17-15-%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.html</id>
-    <published>2020-07-08T01:43:20.000Z</published>
     <updated>2020-07-08T02:18:06.000Z</updated>
     
     <content type="html"><![CDATA[<p>[TOC]</p><a id="more"></a><h3 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a>原题链接</h3><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
